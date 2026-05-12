@@ -259,68 +259,75 @@
         </aside>
 
         <div class="reviews__carousel">
+          <!--
+            PRODUCTION TODO: replace the six static placeholder cards below with the
+            live Google reviews widget (Elfsight / SociableKit / Trustindex / Google
+            Places API) so real Google reviews render here as on justbeachypools.com.
+            The placeholder cards keep the design + JS carousel working as a fallback
+            and demonstrate the visual layout.
+          -->
           <button class="reviews__chev reviews__chev--prev" id="reviewsPrev" aria-label="Previous reviews"><i class="fa-solid fa-chevron-left"></i></button>
           <div class="reviews__viewport">
             <div class="reviews__track" id="reviewsTrack">
-              <article class="review-card">
+              <article class="review-card" aria-label="Sample review">
                 <div class="review-card__head">
-                  <img class="avatar" src="https://i.pravatar.cc/56?img=11" alt="" />
-                  <div><strong>Jennifer M.</strong><small>2 weeks ago</small></div>
+                  <span class="avatar avatar--initial" style="background:#FF6602">A</span>
+                  <div><strong>Customer A.</strong><small>placeholder</small></div>
                   <span class="google-mark" aria-hidden="true"><i class="fa-brands fa-google"></i></span>
                 </div>
                 <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                <p>Switched to Just Beachy after a string of unreliable pool guys. Same tech every week, water is gorgeous, and they actually call back. Worth every penny.</p>
+                <p>Sample review card — replace with the live Google reviews widget for production. The card layout demonstrates avatar, name, timestamp, Google source mark, star rating, and body text.</p>
               </article>
 
-              <article class="review-card">
+              <article class="review-card" aria-label="Sample review">
                 <div class="review-card__head">
-                  <img class="avatar" src="https://i.pravatar.cc/56?img=14" alt="" />
-                  <div><strong>Ricky T.</strong><small>1 month ago</small></div>
+                  <span class="avatar avatar--initial" style="background:#0077BC">B</span>
+                  <div><strong>Customer B.</strong><small>placeholder</small></div>
                   <span class="google-mark" aria-hidden="true"><i class="fa-brands fa-google"></i></span>
                 </div>
                 <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                <p>Pool was green when we bought the house. Just Beachy had it crystal clear in under a week and rebuilt our pump for less than the other quote. Friendly, no surprises.</p>
+                <p>Sample review card — placeholder content. The live widget will pull real reviews from Google so this static markup can be removed once the integration is in place.</p>
               </article>
 
-              <article class="review-card">
+              <article class="review-card" aria-label="Sample review">
                 <div class="review-card__head">
-                  <img class="avatar" src="https://i.pravatar.cc/56?img=25" alt="" />
-                  <div><strong>Sarah P.</strong><small>3 weeks ago</small></div>
+                  <span class="avatar avatar--initial" style="background:#005A93">C</span>
+                  <div><strong>Customer C.</strong><small>placeholder</small></div>
                   <span class="google-mark" aria-hidden="true"><i class="fa-brands fa-google"></i></span>
                 </div>
                 <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                <p>Honest pricing and they explain everything. Our screen enclosure heats things up fast in summer and they keep the chemistry balanced through every spike.</p>
-                <div class="review-card__response"><em>Response from the owner:</em> Thank you, Sarah! We love hearing this.</div>
+                <p>Sample review card — placeholder content. This card also demonstrates the owner-response block layout below.</p>
+                <div class="review-card__response"><em>Response from the owner:</em> Sample owner-response placeholder text.</div>
               </article>
 
-              <article class="review-card">
+              <article class="review-card" aria-label="Sample review">
                 <div class="review-card__head">
-                  <img class="avatar" src="https://i.pravatar.cc/56?img=33" alt="" />
-                  <div><strong>Derek W.</strong><small>5 days ago</small></div>
+                  <span class="avatar avatar--initial" style="background:#FF6602">D</span>
+                  <div><strong>Customer D.</strong><small>placeholder</small></div>
                   <span class="google-mark" aria-hidden="true"><i class="fa-brands fa-google"></i></span>
                 </div>
                 <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                <p>Installed a new variable-speed pump for us. Quiet, efficient, and the install was clean. The crew respected the yard and cleaned up the equipment pad on their way out.</p>
+                <p>Sample review card — placeholder content. The carousel auto-advances every 6 seconds and supports touch swipe + chevron + dot navigation.</p>
               </article>
 
-              <article class="review-card">
+              <article class="review-card" aria-label="Sample review">
                 <div class="review-card__head">
-                  <img class="avatar" src="https://i.pravatar.cc/56?img=47" alt="" />
-                  <div><strong>Alicia L.</strong><small>2 months ago</small></div>
+                  <span class="avatar avatar--initial" style="background:#0077BC">E</span>
+                  <div><strong>Customer E.</strong><small>placeholder</small></div>
                   <span class="google-mark" aria-hidden="true"><i class="fa-brands fa-google"></i></span>
                 </div>
                 <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                <p>They were on time, professional, and incredibly thorough. After their first visit our salt cell was reading correctly and the water clarity was night and day.</p>
+                <p>Sample review card — placeholder content. Real customer reviews will appear here once the live widget is integrated.</p>
               </article>
 
-              <article class="review-card">
+              <article class="review-card" aria-label="Sample review">
                 <div class="review-card__head">
-                  <img class="avatar" src="https://i.pravatar.cc/56?img=52" alt="" />
-                  <div><strong>Brian C.</strong><small>6 weeks ago</small></div>
+                  <span class="avatar avatar--initial" style="background:#005A93">F</span>
+                  <div><strong>Customer F.</strong><small>placeholder</small></div>
                   <span class="google-mark" aria-hidden="true"><i class="fa-brands fa-google"></i></span>
                 </div>
                 <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                <p>Great team. The weekly reports they send with the chemistry levels are a nice touch and let me see exactly what they're doing for my pool every visit.</p>
+                <p>Sample review card — placeholder content. Pause-on-hover is enabled on the carousel so visitors can read at their own pace.</p>
               </article>
             </div>
           </div>
@@ -372,7 +379,7 @@
           <div class="service-card__badge"><i class="fa-solid fa-check"></i></div>
           <div class="service-card__body">
             <h3>Equipment Repairs</h3>
-            <p>Pumps, filters, heaters, salt cells, and automation systems — diagnosed and repaired fast by certified technicians.</p>
+            <p>Our Equipment Repair service keeps your pool running smoothly by quickly diagnosing and fixing issues with pumps, filters, heaters, and more.</p>
             <a href="#" class="btn-primary">LEARN MORE</a>
           </div>
         </article>
@@ -384,7 +391,7 @@
           <div class="service-card__badge"><i class="fa-solid fa-check"></i></div>
           <div class="service-card__body">
             <h3>New Installations</h3>
-            <p>Variable-speed pumps, LED lighting, automation, salt systems, and heaters — installed clean and fully warrantied.</p>
+            <p>Our New Pool Equipment Installation service ensures your pool runs efficiently with the latest technology.</p>
             <a href="#" class="btn-primary">LEARN MORE</a>
           </div>
         </article>
@@ -396,7 +403,7 @@
           <div class="service-card__badge"><i class="fa-solid fa-check"></i></div>
           <div class="service-card__body">
             <h3>Green To Clean</h3>
-            <p>Algae-ridden pool? We'll restore clarity in 3–7 days with a deep chemical and equipment reset.</p>
+            <p>Our Green to Clean service is designed to rescue pools overtaken by algae or neglect.</p>
             <a href="#" class="btn-primary">LEARN MORE</a>
           </div>
         </article>
@@ -408,7 +415,7 @@
           <div class="service-card__badge"><i class="fa-solid fa-check"></i></div>
           <div class="service-card__body">
             <h3>Chemicals Only</h3>
-            <p>Already cleaning your own pool? We handle the chemistry weekly so you stay balanced year-round.</p>
+            <p>Our Chemical Only Cleaning service keeps your pool water perfectly balanced using high-quality chemicals.</p>
             <a href="#" class="btn-primary">LEARN MORE</a>
           </div>
         </article>
@@ -420,7 +427,7 @@
           <div class="service-card__badge"><i class="fa-solid fa-check"></i></div>
           <div class="service-card__body">
             <h3>Pool Drain &amp; Start-Ups</h3>
-            <p>Acid-wash, drain, refill, and full start-up service for new construction or freshly upgraded pool surfaces.</p>
+            <p>Our Pool Drain &amp; Start-Up service is perfect for refreshing old or neglected pools.</p>
             <a href="#" class="btn-primary">LEARN MORE</a>
           </div>
         </article>
@@ -434,11 +441,31 @@
   <section class="brand-strip">
     <div class="container">
       <h3 class="h3-blue center">We Are Experts With:</h3>
+      <!--
+        Brand-logo placeholders styled to suggest each brand's identity.
+        For production, replace each .brand-logo block with an <img> pointing to the
+        official SVG/PNG from the brand's resources page:
+          assets/sections/brand-hayward.svg
+          assets/sections/brand-jandy.svg
+          assets/sections/brand-pentair.svg
+          assets/sections/brand-zodiac.svg
+      -->
       <div class="brand-strip__logos">
-        <div class="brand-logo brand-logo--hayward">HAYWARD<sup>®</sup></div>
-        <div class="brand-logo brand-logo--jandy">Jandy<span class="brand-logo__dot">.</span></div>
-        <div class="brand-logo brand-logo--pentair">PENTAIR</div>
-        <div class="brand-logo brand-logo--zodiac">ZODIAC</div>
+        <div class="brand-logo brand-logo--hayward">
+          <span class="brand-mark brand-mark--hayward">H</span>
+          <span class="brand-text">HAYWARD<sup>®</sup></span>
+        </div>
+        <div class="brand-logo brand-logo--jandy">
+          <span class="brand-text">Jandy<span class="brand-logo__dot">.</span></span>
+        </div>
+        <div class="brand-logo brand-logo--pentair">
+          <span class="brand-mark brand-mark--pentair"></span>
+          <span class="brand-text">PENTAIR</span>
+        </div>
+        <div class="brand-logo brand-logo--zodiac">
+          <span class="brand-mark brand-mark--zodiac">Z</span>
+          <span class="brand-text">ZODIAC</span>
+        </div>
       </div>
     </div>
   </section>
@@ -460,28 +487,28 @@
           <span class="why-card__icon"><i class="fa-solid fa-angles-right"></i></span>
           <div>
             <h3>Experience and Expertise</h3>
-            <p>Decades of combined pool service experience across residential and commercial systems.</p>
+            <p>Over 20 years of experience in the pool service industry spanning across 2 counties.</p>
           </div>
         </article>
         <article class="why-card">
           <span class="why-card__icon"><i class="fa-solid fa-angles-right"></i></span>
           <div>
             <h3>Proven Track Record</h3>
-            <p>Hundreds of happy Pasco County homes — and the five-star reviews to back it up.</p>
+            <p>Servicing over 100+ customers a year while maintaining a 5 star rating from our clients.</p>
           </div>
         </article>
         <article class="why-card">
           <span class="why-card__icon"><i class="fa-solid fa-angles-right"></i></span>
           <div>
             <h3>Quality and Reliability</h3>
-            <p>Same friendly tech, every week. Reliable schedule, premium chemicals, no shortcuts.</p>
+            <p>When you choose Just Beachy Pools, you have a friend in the industry you can trust.</p>
           </div>
         </article>
         <article class="why-card">
           <span class="why-card__icon"><i class="fa-solid fa-angles-right"></i></span>
           <div>
             <h3>Premium Support</h3>
-            <p>Call our office and you'll talk to a real person. We respond fast and solve problems faster.</p>
+            <p>We are available day and night for our customers. We take caring for your pool seriously.</p>
           </div>
         </article>
       </div>
@@ -515,8 +542,8 @@
       <div class="split__media">
         <iframe
           class="areas__map"
-          src="https://www.google.com/maps?q=Pasco+County,+FL&output=embed"
-          title="Service map of Pasco County, FL"
+          src="https://www.google.com/maps?q=Just+Beachy+Pools+Spring+Hill+FL&output=embed"
+          title="Just Beachy Pools — Spring Hill, FL"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           allowfullscreen></iframe>
@@ -610,7 +637,7 @@
                 <svg viewBox="0 0 24 16" width="22" height="14"><rect width="24" height="16" fill="#B22234"/><g fill="#fff"><rect y="1.23" width="24" height="1.23"/><rect y="3.69" width="24" height="1.23"/><rect y="6.15" width="24" height="1.23"/><rect y="8.62" width="24" height="1.23"/><rect y="11.08" width="24" height="1.23"/><rect y="13.54" width="24" height="1.23"/></g><rect width="10" height="8.62" fill="#3C3B6E"/></svg>
                 <i class="fa-solid fa-caret-down"></i>
               </span>
-              <input type="tel" name="phone" placeholder="(201) 555-0123" required>
+              <input type="tel" name="phone" required>
             </div>
           </label>
           <label class="estimate-field"><span>Email <em>*</em></span><input type="email" name="email" required></label>

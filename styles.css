@@ -633,6 +633,13 @@ ul, ol { list-style: none; }
   border-radius: 50%;
   object-fit: cover;
 }
+.avatar--initial {
+  display: inline-grid; place-items: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: var(--font-body);
+}
 .review-card p {
   color: var(--color-body);
   font-size: 14px;
@@ -832,23 +839,59 @@ ul, ol { list-style: none; }
   max-width: 1140px; margin: 0 auto;
 }
 .brand-logo {
+  display: inline-flex; align-items: center; gap: 10px;
   font-family: var(--font-body);
   font-weight: 800;
-  font-size: 30px;
-  color: #4b5563;
+  font-size: 32px;
   max-height: 60px;
-  display: inline-flex; align-items: center;
-  padding: 12px 18px;
-  filter: grayscale(1);
-  opacity: .65;
-  transition: filter .25s, opacity .25s, color .25s;
+  padding: 8px 14px;
+  line-height: 1;
+  transition: transform .2s ease, opacity .2s ease;
 }
-.brand-logo:hover { filter: none; opacity: 1; color: var(--color-primary); }
-.brand-logo--hayward sup { font-size: 12px; vertical-align: super; }
-.brand-logo--jandy { font-style: italic; font-family: var(--font-heading); }
-.brand-logo--jandy .brand-logo__dot { color: var(--color-orange-end); }
-.brand-logo--pentair { letter-spacing: .04em; }
-.brand-logo--zodiac { letter-spacing: .18em; font-weight: 700; }
+.brand-logo:hover { transform: translateY(-2px); }
+.brand-mark {
+  display: inline-grid; place-items: center;
+  width: 36px; height: 36px;
+  font-weight: 800;
+  border-radius: 4px;
+}
+
+/* Hayward — blue wordmark + small blue "H" badge */
+.brand-logo--hayward { color: #00529B; }
+.brand-mark--hayward {
+  background: #00529B;
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 22px;
+  border-radius: 6px;
+}
+.brand-logo--hayward .brand-text { font-family: var(--font-body); letter-spacing: -.5px; }
+.brand-logo--hayward sup { font-size: 12px; vertical-align: super; color: #00529B; }
+
+/* Jandy — dark-blue italic wordmark with orange punctuation */
+.brand-logo--jandy { color: #003B6F; font-style: italic; font-family: var(--font-heading); font-size: 36px; font-weight: 700; }
+.brand-logo--jandy .brand-logo__dot { color: #FF6602; }
+
+/* Pentair — green wordmark with a green diamond mark */
+.brand-logo--pentair { color: #006B3F; }
+.brand-mark--pentair {
+  width: 22px; height: 22px;
+  background: #006B3F;
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+.brand-logo--pentair .brand-text { letter-spacing: .04em; font-family: var(--font-body); }
+
+/* Zodiac — yellow square with black Z + black wordmark */
+.brand-logo--zodiac { color: #111; }
+.brand-mark--zodiac {
+  background: #FFC107;
+  color: #111;
+  font-family: var(--font-body);
+  font-size: 24px;
+  border-radius: 4px;
+}
+.brand-logo--zodiac .brand-text { letter-spacing: .14em; font-weight: 700; font-family: var(--font-body); }
 
 /* =========================================================================
    10. WHY CHOOSE US
