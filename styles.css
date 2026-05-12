@@ -838,6 +838,15 @@ ul, ol { list-style: none; }
   gap: 32px; flex-wrap: wrap;
   max-width: 1140px; margin: 0 auto;
 }
+/* Homepage brand strip — real PNG logos */
+.brand-png {
+  max-height: 60px;
+  width: auto;
+  object-fit: contain;
+  transition: transform .2s ease, opacity .2s ease;
+}
+.brand-png:hover { transform: translateY(-2px); }
+
 .brand-logo {
   display: inline-flex; align-items: center; gap: 10px;
   font-family: var(--font-body);
@@ -1355,4 +1364,225 @@ ul, ol { list-style: none; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
   html { scroll-behavior: auto; }
   .hero-slideshow .slide { transition: none !important; }
+}
+
+/* ============================================
+   ABOUT US PAGE STYLES
+   ============================================ */
+
+/* --- A. Page hero banner --- */
+.about-hero {
+  position: relative;
+  min-height: 450px;
+  background-image: url('assets/about/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-hero__overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(0, 40, 80, 0.55) 0%, rgba(0, 80, 120, 0.60) 100%);
+  z-index: 0;
+}
+.about-hero__inner {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 0 20px;
+  max-width: 900px;
+}
+.about-hero h1 {
+  font-family: 'Cabin', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 57.6px;
+  letter-spacing: -1px;
+  text-transform: none;
+  margin: 0 0 16px 0;
+}
+.about-hero h4 {
+  font-family: 'Cabin', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 32.5px;
+  letter-spacing: normal;
+  margin: 0;
+}
+
+/* --- B. Who We Are --- */
+.who-we-are {
+  padding: 100px 0;
+  background: #FFFFFF;
+}
+.who-we-are__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.who-we-are__copy .who-we-are__eyebrow {
+  font-family: 'Cabin', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0077BC;
+  line-height: 22.4px;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  margin: 0 0 12px 0;
+}
+.who-we-are__copy h2 {
+  font-family: 'Cabin', sans-serif;
+  font-size: 39px;
+  font-weight: 600;
+  color: #26272C;
+  line-height: 46.8px;
+  letter-spacing: -0.5px;
+  text-transform: none;
+  margin: 0 0 24px 0;
+}
+.who-we-are__copy p {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #26272C;
+  line-height: 35px;
+  margin: 0 0 20px 0;
+}
+.who-we-are__copy .btn-primary {
+  margin-top: 24px;
+  font-size: 13px;
+}
+.who-we-are__photos {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+.who-we-are__photos img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* --- C. Reviews carousel section wrapper --- */
+.reviews-carousel-section {
+  padding: 80px 0;
+  background: #FFFFFF;
+}
+
+/* --- D. "Certified Experts" brand banner --- */
+.brand-banner {
+  position: relative;
+  padding: 100px 0;
+  background-image: url('assets/about/brand-banner-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.brand-banner__overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(0, 40, 80, 0.60) 0%, rgba(0, 40, 80, 0.65) 100%);
+  z-index: 0;
+}
+.brand-banner__inner {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.brand-banner h2 {
+  /* Note: this H2 uses Outfit, not Cabin (per spec). */
+  font-family: 'Outfit', sans-serif;
+  font-size: 39px;
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 46.8px;
+  letter-spacing: -0.5px;
+  text-transform: none;
+  margin: 0 auto 48px auto;
+  max-width: 900px;
+}
+.brand-banner__logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.brand-card {
+  background: #FFFFFF;
+  border-radius: 6px;
+  padding: 28px 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+}
+.brand-card img {
+  max-width: 100%;
+  max-height: 60px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* --- E. Estimate form section wrapper --- */
+.estimate-form-section {
+  padding: 100px 0;
+  background: #FFFFFF;
+}
+
+/* --- Active nav state --- */
+.main-nav__menu .is-active > a { color: var(--color-topbar); }
+
+/* --- About Us responsive --- */
+@media (max-width: 1199px) {
+  .about-hero { min-height: 400px; }
+  .about-hero h1 { font-size: 42px; line-height: 50px; }
+  .about-hero h4 { font-size: 22px; line-height: 30px; }
+
+  .who-we-are { padding: 80px 0; }
+  .who-we-are__grid { gap: 40px; }
+  .who-we-are__copy h2 { font-size: 34px; line-height: 42px; }
+  .who-we-are__copy p { font-size: 17px; line-height: 32px; }
+
+  .brand-banner { padding: 80px 0; }
+  .brand-banner h2 { font-size: 34px; line-height: 42px; }
+}
+
+@media (max-width: 1023px) {
+  .who-we-are__grid { gap: 40px; }
+  .brand-banner__logos { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 767px) {
+  .about-hero { min-height: 320px; }
+  .about-hero h1 { font-size: 36px; line-height: 44px; letter-spacing: -0.5px; }
+  .about-hero h4 { font-size: 18px; line-height: 26px; }
+
+  .who-we-are { padding: 60px 0; }
+  .who-we-are__grid { grid-template-columns: 1fr; gap: 40px; }
+  .who-we-are__copy h2 { font-size: 28px; line-height: 36px; }
+  .who-we-are__copy p { font-size: 16px; line-height: 28px; margin-bottom: 16px; }
+  .who-we-are__photos { gap: 16px; }
+
+  .brand-banner { padding: 60px 0; }
+  .brand-banner h2 { font-size: 26px; line-height: 34px; margin-bottom: 32px; }
+  .brand-card { padding: 20px; min-height: 90px; }
+  .brand-card img { max-height: 48px; }
+
+  .estimate-form-section { padding: 60px 0; }
+  .reviews-carousel-section { padding: 50px 0; }
+}
+
+@media (max-width: 479px) {
+  .about-hero h1 { font-size: 32px; line-height: 40px; }
+  .brand-banner__logos { grid-template-columns: 1fr; gap: 16px; }
 }
