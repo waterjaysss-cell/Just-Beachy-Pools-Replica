@@ -1,0 +1,41 @@
+  <!-- =====================================================================
+       FAQ ACCORDION — repeating Q&A item template
+       Future enhancement: iterate over faqs.json. Today: static markup,
+       page-specific overrides come from per-page templates.
+       ===================================================================== -->
+  <section class="faq">
+    <div class="faq__bg" aria-hidden="true"></div>
+    <div class="faq__overlay" aria-hidden="true"></div>
+    <div class="container faq__inner">
+      <h2 class="h2-dark center">Got Questions?</h2>
+      <p class="faq__lead center">We've shared a series of our most common questions and answered them.</p>
+
+      <div class="faq__grid">
+        <div class="faq__col">
+          <details class="faq-item" open>
+            <summary>What areas do you serve?</summary>
+            <div class="faq-body">We proudly serve Spring Hill and surrounding areas, including Spring Hill and about a 15 mile radius.</div>
+          </details>
+          <details class="faq-item">
+            <summary>What's included in your Full Service plan?</summary>
+            <div class="faq-body">Weekly skim, brush, vacuum, filter check, water testing, full chemical balance, and a written report of every visit.</div>
+          </details>
+        </div>
+        <div class="faq__col">
+          <details class="faq-item" open>
+            <summary>How much does weekly service cost?</summary>
+            <div class="faq-body">Prices vary based on your pool's size and condition. Chemical Only service starts at $100+/month and Full Service starts at $140+/month.</div>
+          </details>
+          <details class="faq-item">
+            <summary>How do I get started?</summary>
+            <div class="faq-body">Fill out the estimate form or call us at {{site.secondary_phone_display}}.</div>
+          </details>
+        </div>
+      </div>
+
+      <div class="faq__cta">
+        <p>Still have questions?</p>
+        <a href="/contact-us/" class="btn-primary btn-primary--large">CONTACT US</a>
+      </div>
+    </div>
+  </section>

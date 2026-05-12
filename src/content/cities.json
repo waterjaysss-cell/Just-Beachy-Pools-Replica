@@ -1,0 +1,17 @@
+{
+  "cities": [
+    { "slug": "spring-hill",       "name": "Spring Hill",       "state": "FL" },
+    { "slug": "hudson",            "name": "Hudson",            "state": "FL" },
+    { "slug": "hudson-beach",      "name": "Hudson Beach",      "state": "FL" },
+    { "slug": "land-o-lakes",      "name": "Land O' Lakes",     "state": "FL" },
+    { "slug": "port-richey",       "name": "Port Richey",       "state": "FL" },
+    { "slug": "dade-city",         "name": "Dade City",         "state": "FL" },
+    { "slug": "brooksville",       "name": "Brooksville",       "state": "FL" },
+    { "slug": "odessa",            "name": "Odessa",            "state": "FL" },
+    { "slug": "angeline",          "name": "Angeline",          "state": "FL" },
+    { "slug": "river-ridge",       "name": "River Ridge",       "state": "FL" },
+    { "slug": "hernando-beach",    "name": "Hernando Beach",    "state": "FL" },
+    { "slug": "shady-hills",       "name": "Shady Hills",       "state": "FL" },
+    { "slug": "bayonet-point",     "name": "Bayonet Point",     "state": "FL" }
+  ]
+}

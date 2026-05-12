@@ -1,0 +1,12 @@
+  <!-- =====================================================================
+       INNER HERO — full-width photo hero with overlay + centered H1/H2
+       Expects context: page.hero_image, page.hero_title, page.hero_subtitle
+       ===================================================================== -->
+  <section class="inner-hero" style="background-image:url('{{page.hero_image}}')">
+    <div class="inner-hero__overlay" aria-hidden="true"></div>
+    <div class="container inner-hero__inner">
+      <h1 class="inner-hero__h1">{{page.hero_title}}</h1>
+      <h2 class="inner-hero__h2">{{page.hero_subtitle}}</h2>
+      <img class="inner-hero__trust" src="/assets/sections/trust-badges.webp" alt="Trust badges" loading="lazy" />
+    </div>
+  </section>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Schedule pool service in Spring Hill, FL with Just Beachy Pools. Weekly service, chemical-only, Green to Clean, equipment repair and more." />
+  <title>💧 #1 Schedule Service Spring Hill, FL - Just Beachy Pools</title>
+
+  <!-- Fonts: Cabin (headings), Inter (body), Outfit (buttons), Sacramento (script accents) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&family=Sacramento&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Build-pipeline CSS layers -->
+  <link rel="stylesheet" href="/css/tokens.css" />
+  <link rel="stylesheet" href="/css/globals.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/schedule-service.css" />
+</head>
+<body>
+
+  <!-- =====================================================================
+       HEADER — total 163px (reused)
+       ===================================================================== -->
+  <header class="site-header" id="siteHeader">
+    {{> top-bar}}
+    {{> main-nav}}
+  </header>
+
+  <!-- =====================================================================
+       A. REVIEWS BAND — "We Are Your Pool Experts!" (NO HERO ABOVE)
+       Reused verbatim from Contact Us page.
+       ===================================================================== -->
+  <section class="reviews-band">
+    <div class="reviews-band__watermark" aria-hidden="true"></div>
+
+    <div class="container reviews-band__grid">
+
+      <div class="reviews-col">
+        <h2>We Are Your Pool Experts!</h2>
+        <p>At Just Beachy Pools, we pride ourselves on quality service at an affordable price. You will not be disappointed you made the switch.</p>
+
+        <div class="section reviews reviews-carousel-section" id="reviews">
+          <div class="reviews__layout reviews__layout--inline">
+            <aside class="reviews__summary">
+              <h3>Excellent</h3>
+              <p class="reviews__brand">Just Beachy Pools</p>
+              <div class="reviews__rating">
+                <span class="reviews__num">4.3</span>
+                <div class="stars stars--lg"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+              </div>
+              <p class="reviews__count">Based on 15 reviews</p>
+              <div class="reviews__cta">
+                <a href="#" class="badge-link">See all reviews</a>
+                <a href="#" class="badge-link">review us on <span class="g-mark">G</span></a>
+              </div>
+            </aside>
+
+            <div class="reviews__carousel">
+              <button class="reviews__chev reviews__chev--prev" id="reviewsPrev" aria-label="Previous reviews"><i class="fa-solid fa-chevron-left"></i></button>
+              <div class="reviews__viewport">
+                <div class="reviews__track" id="reviewsTrack">
+                  <article class="review-card" aria-label="Sample review">
+                    <div class="review-card__head">
+                      <span class="avatar avatar--initial" style="background:#FF6602">A</span>
+                      <div><strong>Customer A.</strong><small>placeholder</small></div>
+                      <span class="google-mark" aria-hidden="true"><i class="fa-brands fa-google"></i></span>
+                    </div>
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p>Sample review card — replace with the live Google reviews widget for production. Demonstrates the layout: avatar, name, time-ago, source mark, stars, body.</p>
+                  </article>
+                  <article class="review-card" aria-label="Sample review">
+                    <div class="review-card__head">
+                      <span class="avatar avatar--initial" style="background:#0077BC">B</span>
+                      <div><strong>Customer B.</strong><small>placeholder</small></div>
+                      <span class="google-mark" aria-hidden="true"><i class="fa-brands fa-google"></i></span>
+                    </div>
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p>Sample review card — placeholder content. Real Google reviews appear here once the live widget is wired in.</p>
+                  </article>
+                  <article class="review-card" aria-label="Sample review">
+                    <div class="review-card__head">
+                      <span class="avatar avatar--initial" style="background:#005A93">C</span>
+                      <div><strong>Customer C.</strong><small>placeholder</small></div>
+                      <span class="google-mark" aria-hidden="true"><i class="fa-brands fa-google"></i></span>
+                    </div>
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p>Sample review card — placeholder content. The owner-response block layout is demonstrated below.</p>
+                    <div class="review-card__response"><em>Response from the owner:</em> Sample owner-response placeholder text.</div>
+                  </article>
+                  <article class="review-card" aria-label="Sample review">
+                    <div class="review-card__head">
+                      <span class="avatar avatar--initial" style="background:#FF6602">D</span>
+                      <div><strong>Customer D.</strong><small>placeholder</small></div>
+                      <span class="google-mark" aria-hidden="true"><i class="fa-brands fa-google"></i></span>
+                    </div>
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p>Sample review card — placeholder content. Carousel auto-advances every 6 seconds and supports touch swipe.</p>
+                  </article>
+                </div>
+              </div>
+              <button class="reviews__chev reviews__chev--next" id="reviewsNext" aria-label="Next reviews"><i class="fa-solid fa-chevron-right"></i></button>
+              <div class="reviews__dots" id="reviewsDots"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-trust-row">
+          <img src="/assets/sections/trust-badges.webp" alt="Google · Yelp · Facebook five-star reviews" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="contact-form-col">
+        <div class="contact-form-card" id="contact-form">
+          <h2>Get In Touch With Us</h2>
+          <form onsubmit="event.preventDefault(); console.log('contact form submit'); alert('Form is a demo placeholder.');">
+            <label for="cf-first">Name <span class="req">*</span></label>
+            <div class="row-2">
+              <div class="cf-field">
+                <input id="cf-first" type="text" name="first" placeholder="First Name" required />
+                <span class="sub">First</span>
+              </div>
+              <div class="cf-field">
+                <input id="cf-last" type="text" name="last" placeholder="Last Name" required />
+                <span class="sub">Last</span>
+              </div>
+            </div>
+
+            <label for="cf-phone">Phone <span class="req">*</span></label>
+            <div class="phone-input phone-input--light">
+              <span class="phone-input__flag" aria-hidden="true">
+                <svg viewBox="0 0 24 16" width="22" height="14"><rect width="24" height="16" fill="#B22234"/><g fill="#fff"><rect y="1.23" width="24" height="1.23"/><rect y="3.69" width="24" height="1.23"/><rect y="6.15" width="24" height="1.23"/><rect y="8.62" width="24" height="1.23"/><rect y="11.08" width="24" height="1.23"/><rect y="13.54" width="24" height="1.23"/></g><rect width="10" height="8.62" fill="#3C3B6E"/></svg>
+                <i class="fa-solid fa-caret-down"></i>
+              </span>
+              <input id="cf-phone" type="tel" name="phone" placeholder="Phone Number" required />
+            </div>
+
+            <label for="cf-email">Email <span class="req">*</span></label>
+            <input id="cf-email" type="email" name="email" placeholder="Email Address" required />
+
+            <label>Address</label>
+            <div class="cf-field">
+              <input id="cf-addr1" type="text" name="addr1" />
+              <span class="sub">Address Line 1</span>
+            </div>
+            <div class="cf-field">
+              <input id="cf-addr2" type="text" name="addr2" />
+              <span class="sub">Address Line 2</span>
+            </div>
+            <div class="row-2">
+              <div class="cf-field">
+                <input id="cf-city" type="text" name="city" />
+                <span class="sub">City</span>
+              </div>
+              <div class="cf-field">
+                <select id="cf-state" name="state">
+                  <option>--- Select state ---</option>
+                  <option>Florida</option><option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option><option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option><option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option><option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option><option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option><option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option><option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option><option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option><option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option>
+                </select>
+                <span class="sub">State</span>
+              </div>
+            </div>
+            <div class="cf-field cf-field--half">
+              <input id="cf-zip" type="text" name="zip" inputmode="numeric" />
+              <span class="sub">Zip Code</span>
+            </div>
+
+            <button type="submit" class="btn-blue-solid" aria-label="Submit contact form">Submit</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       B. OUR SERVICE AREAS — 2-col pin list + Google Map
+       ===================================================================== -->
+  <section class="service-areas">
+    <div class="container two-col">
+      <div class="areas-col">
+        <h2>Our Service Areas</h2>
+        <ul class="area-list">
+          <li><span class="pin" aria-hidden="true"></span>Spring Hill</li>
+          <li><span class="pin" aria-hidden="true"></span>Land O'Lakes</li>
+          <li><span class="pin" aria-hidden="true"></span>Hudson</li>
+          <li><span class="pin" aria-hidden="true"></span>Port Richey</li>
+          <li><span class="pin" aria-hidden="true"></span>Shady Hills</li>
+          <li><span class="pin" aria-hidden="true"></span>Dade City</li>
+          <li><span class="pin" aria-hidden="true"></span>New Port Richey</li>
+          <li><span class="pin" aria-hidden="true"></span>Odessa</li>
+          <li><span class="pin" aria-hidden="true"></span>Angeline</li>
+          <li><span class="pin" aria-hidden="true"></span>Brooksville</li>
+          <li><span class="pin" aria-hidden="true"></span>River Ridge</li>
+          <li><span class="pin" aria-hidden="true"></span>Hernando Beach</li>
+          <li><span class="pin" aria-hidden="true"></span>Hudson Beach</li>
+          <li><span class="pin" aria-hidden="true"></span>And More!</li>
+        </ul>
+      </div>
+      <div class="map-col">
+        <iframe
+          src="https://www.google.com/maps?q=Spring+Hill+FL&z=9&output=embed"
+          width="100%" height="500" style="border:0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+          title="Just Beachy Pools service area map"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       C. GOT QUESTIONS? — FAQ accordion (rooftop bg image + tint)
+       ===================================================================== -->
+  <section class="faq-band" style="background:url('assets/sections/faq-bg.jpg') center/cover no-repeat;">
+    <div class="faq-overlay" aria-hidden="true"></div>
+    <div class="container">
+      <h2 class="faq-title">Got Questions?</h2>
+      <p class="faq-sub">
+        We've shared a series of our most common questions and answered them.<br>
+        If you need additional information or have other questions, never hesitate<br>
+        to reach out to us.
+      </p>
+
+      <div class="faq-grid">
+        <!-- LEFT COLUMN -->
+        <details class="faq-item" open>
+          <summary>What areas do you serve? <span class="chev" aria-hidden="true"></span></summary>
+          <div class="answer">We proudly serve Spring Hill and surrounding areas, including Spring Hill and about a 15 mile radius.</div>
+        </details>
+        <details class="faq-item">
+          <summary>What's included in your Full Service plan? <span class="chev" aria-hidden="true"></span></summary>
+          <div class="answer"><!-- TODO: fetch answer copy from live site --></div>
+        </details>
+        <details class="faq-item">
+          <summary>Do you offer chemical-only service? <span class="chev" aria-hidden="true"></span></summary>
+          <div class="answer"><!-- TODO: fetch answer copy from live site --></div>
+        </details>
+        <details class="faq-item">
+          <summary>What is the "Green to Clean" service? <span class="chev" aria-hidden="true"></span></summary>
+          <div class="answer"><!-- TODO: fetch answer copy from live site --></div>
+        </details>
+        <details class="faq-item">
+          <summary>Do you provide start-up services for new construction &amp; upgraded pools? <span class="chev" aria-hidden="true"></span></summary>
+          <div class="answer"><!-- TODO: fetch answer copy from live site --></div>
+        </details>
+
+        <!-- RIGHT COLUMN -->
+        <details class="faq-item" open>
+          <summary>How much does weekly service cost? <span class="chev" aria-hidden="true"></span></summary>
+          <div class="answer">Prices vary based on your pool's size and condition. Chemical Only service starts at $100+/month and Full Service starts at $140+/month.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Can you repair or install pool equipment? <span class="chev" aria-hidden="true"></span></summary>
+          <div class="answer"><!-- TODO: fetch answer copy from live site --></div>
+        </details>
+        <details class="faq-item">
+          <summary>What does your Drain &amp; Clean service include? <span class="chev" aria-hidden="true"></span></summary>
+          <div class="answer"><!-- TODO: fetch answer copy from live site --></div>
+        </details>
+        <details class="faq-item">
+          <summary>Do I need to be home during service visits? <span class="chev" aria-hidden="true"></span></summary>
+          <div class="answer"><!-- TODO: fetch answer copy from live site --></div>
+        </details>
+        <details class="faq-item">
+          <summary>How do I get started with service? <span class="chev" aria-hidden="true"></span></summary>
+          <div class="answer"><!-- TODO: fetch answer copy from live site --></div>
+        </details>
+      </div>
+
+      <div class="faq-cta">
+        <h3>Still have questions?</h3>
+        <a href="contact-us.html" class="btn-orange-gradient">CONTACT US</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       D. GET YOUR FREE ESTIMATE — bottom form (reused from homepage)
+       ===================================================================== -->
+  <section class="section estimate estimate-form-section estimate-form-section--schedule" id="estimate">
+    <div class="container center">
+      <h2 class="h2-blue">Get Your Free Estimate</h2>
+      <p class="estimate__sub">Complete the form below and we will contact you to discuss your pool problem!</p>
+
+      <form class="estimate-form" onsubmit="event.preventDefault(); alert('Form is a demo placeholder.');">
+        <div class="estimate-form__trust">
+          <img src="/assets/sections/trust-badges.webp" alt="Google Yelp Facebook reviews" />
+        </div>
+
+        <div class="estimate-form__fields">
+          <label class="estimate-field"><span>Name <em>*</em></span><input type="text" name="name" required></label>
+          <label class="estimate-field">
+            <span>Phone <em>*</em></span>
+            <div class="phone-input phone-input--light">
+              <span class="phone-input__flag" aria-hidden="true">
+                <svg viewBox="0 0 24 16" width="22" height="14"><rect width="24" height="16" fill="#B22234"/><g fill="#fff"><rect y="1.23" width="24" height="1.23"/><rect y="3.69" width="24" height="1.23"/><rect y="6.15" width="24" height="1.23"/><rect y="8.62" width="24" height="1.23"/><rect y="11.08" width="24" height="1.23"/><rect y="13.54" width="24" height="1.23"/></g><rect width="10" height="8.62" fill="#3C3B6E"/></svg>
+                <i class="fa-solid fa-caret-down"></i>
+              </span>
+              <input type="tel" name="phone" required>
+            </div>
+          </label>
+          <label class="estimate-field"><span>Email <em>*</em></span><input type="email" name="email" required></label>
+
+          <label class="estimate-field">
+            <span>Service Needed <em>*</em></span>
+            <select name="service" required>
+              <option value="">Select One</option>
+              <option>Weekly Pool Service</option>
+              <option>Commercial Pool Service</option>
+              <option>Equipment Repair</option>
+              <option>Equipment Installation</option>
+              <option>Green To Clean</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label class="estimate-field"><span>Zip Code <em>*</em></span><input type="text" name="zip" inputmode="numeric" required></label>
+          <fieldset class="estimate-field estimate-field--radio">
+            <legend>Are You A New Customer? <em>*</em></legend>
+            <label class="radio"><input type="radio" name="new-customer" value="yes" checked> Yes</label>
+            <label class="radio"><input type="radio" name="new-customer" value="no"> No</label>
+          </fieldset>
+        </div>
+
+        <button type="submit" class="form-submit form-submit--wide">Submit</button>
+      </form>
+
+      <h4 class="estimate__phone-h4">
+        Or For Faster Response Call:<br/>
+        <a href="tel:3526784100">(352) 678-4100</a>
+      </h4>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       FOOTER (reused)
+       ===================================================================== -->
+  {{> footer}}
+
+  <!-- =====================================================================
+       FLOATING WIDGETS (reused)
+       ===================================================================== -->
+  <aside class="rating-widget" id="ratingWidget" aria-label="Google rating">
+    <span class="rating-widget__g"><i class="fa-brands fa-google"></i></span>
+    <div class="rating-widget__body">
+      <small>Google Rating</small>
+      <div class="rating-widget__line"><strong>4.3</strong> <span class="stars stars--sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></div>
+      <small>Based on 15 reviews</small>
+    </div>
+    <button class="rating-widget__close" id="ratingClose" aria-label="Dismiss">&times;</button>
+  </aside>
+
+  <aside class="recaptcha-badge" aria-label="reCAPTCHA">
+    <div class="recaptcha-badge__inner">
+      <i class="fa-solid fa-shield-halved"></i>
+      <div><strong>protected by</strong><br/><span>reCAPTCHA</span></div>
+    </div>
+    <div class="recaptcha-badge__links"><a href="#">Privacy</a> - <a href="#">Terms</a></div>
+  </aside>
+
+  <script src="/js/nav.js"></script>
+  <script src="/js/carousel.js"></script>
+  <script src="/js/forms.js"></script>
+  <script src="/js/faq.js"></script>
+</body>
+</html>

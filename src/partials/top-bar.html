@@ -1,0 +1,20 @@
+    <!-- 1. UTILITY BAR — 48px, #BDE9FB -->
+    <div class="utility-bar">
+      <div class="container utility-bar__inner">
+        <div class="utility-bar__contact">
+          <a href="tel:{{site.phone_tel}}" class="utility-bar__link">
+            <span class="utility-bar__icon"><i class="fa-solid fa-phone"></i></span>
+            {{site.phone_display}}
+          </a>
+          <a href="mailto:{{site.email}}" class="utility-bar__link">
+            <span class="utility-bar__icon"><i class="fa-solid fa-envelope"></i></span>
+            {{site.email}}
+          </a>
+        </div>
+        <div class="utility-bar__social">
+          <a href="{{site.social.facebook}}" aria-label="Facebook" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="{{site.social.instagram}}" aria-label="Instagram" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+          <a href="{{site.social.linkedin}}" aria-label="LinkedIn" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
