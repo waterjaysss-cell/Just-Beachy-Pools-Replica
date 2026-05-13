@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{page.title}}</title>
+  <meta name="description" content="{{page.meta_description}}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&family=Sacramento&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="{{rootPrefix}}styles.css">
+  <link rel="stylesheet" href="{{rootPrefix}}src/css/individual-service.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    {{> top-bar}}
+    {{> main-nav}}
+  </header>
+
+  <main id="main">
+
+    <!-- ===== SECTION A: HERO ===== -->
+    <section class="svc-hero" aria-labelledby="svc-h1" style="background-image: url('{{rootPrefix}}assets/hero/hero-2.jpg');">
+      <div class="svc-hero__overlay"></div>
+      <div class="container svc-hero__inner">
+        <h1 id="svc-h1" class="svc-hero__title">{{page.h1}}</h1>
+        <p class="svc-hero__subtitle">Quality {{page.subtitle_service_name}} in Spring Hill and Surrounding Areas That You Can Trust.</p>
+        <div class="svc-hero__badges">
+          <img src="{{rootPrefix}}assets/sections/trust-badges.webp" alt="Google Yelp Facebook 5 stars">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION B + C: 2-COLUMN BODY ===== -->
+    <section class="svc-body">
+      <div class="container svc-body__grid">
+
+        <aside class="svc-sidebar">
+          <div class="svc-sidebar__form">
+            <h3 class="svc-sidebar__title">Schedule Service!</h3>
+            <div class="svc-sidebar__badges">
+              <img src="{{rootPrefix}}assets/sections/trust-badges.webp" alt="">
+            </div>
+            <hr class="svc-sidebar__divider">
+            <form class="svc-sidebar__fields" action="#" method="post" onsubmit="event.preventDefault(); alert('Form is a demo placeholder.');">
+              <label>Name <span class="req">*</span>
+                <div class="name-row">
+                  <input type="text" placeholder="First Name" aria-label="First name" required>
+                  <input type="text" placeholder="Last Name" aria-label="Last name" required>
+                </div>
+                <div class="name-row name-row--labels"><span>First</span><span>Last</span></div>
+              </label>
+              <label>Phone <span class="req">*</span>
+                <input type="tel" placeholder="Phone Number" required>
+              </label>
+              <label>Email <span class="req">*</span>
+                <input type="email" placeholder="Email Address" required>
+              </label>
+              <fieldset>
+                <legend>Address</legend>
+                <input type="text" placeholder="Address Line 1">
+                <span class="field-label">Address Line 1</span>
+                <input type="text" placeholder="Address Line 2">
+                <span class="field-label">Address Line 2</span>
+                <div class="address-row">
+                  <div><input type="text" aria-label="City"><span class="field-label">City</span></div>
+                  <div>
+                    <select aria-label="State"><option>--- Select state ---</option><option>Florida</option></select>
+                    <span class="field-label">State</span>
+                  </div>
+                </div>
+                <input type="text" class="zip" aria-label="Zip code">
+                <span class="field-label">Zip Code</span>
+              </fieldset>
+              <button type="submit" class="svc-sidebar__submit">Submit</button>
+            </form>
+          </div>
+
+          <nav class="svc-sidebar__nav" aria-label="Related services">
+            <a href="{{rootPrefix}}pool-cleaning/weekly-pool-service/">Pool Cleaning</a>
+            <a href="{{rootPrefix}}pool-repairs/pool-pump-repair/">Pool Repairs</a>
+            <a href="{{rootPrefix}}pool-equipment-installations/pool-pump-installation/">New Equipment Installation</a>
+            <a href="{{rootPrefix}}pool-services/algae-removal/">Other Pool Services</a>
+            <a href="{{rootPrefix}}pool-services/green-to-clean/">Green To Clean</a>
+          </nav>
+        </aside>
+
+        <article class="svc-content">
+          <h2 class="svc-content__h2">{{page.h2}}</h2>
+          <p class="svc-content__lead"><strong>{{page.lead}}</strong></p>
+          <p class="svc-content__p">{{page.body_paragraph_1}}</p>
+          <p class="svc-content__p">{{page.body_paragraph_2}}</p>
+          <img src="{{rootPrefix}}{{page.feature_image}}" alt="{{page.feature_image_alt}}" class="svc-content__img" loading="lazy">
+          {{#each page.subsections}}
+            <h3 class="svc-content__h3">{{h3}}</h3>
+            <p class="svc-content__p">{{body}}</p>
+          {{/each}}
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== SECTION D: SCHEDULE CTA BAND ===== -->
+    <section class="schedule-cta-band">
+      <div class="container schedule-cta-band__inner">
+        <h2 class="schedule-cta-band__text">Need pool service? Get in touch with us and schedule your FREE pool service quote from Just Beachy Pools</h2>
+        <a href="{{rootPrefix}}contact-us.html#contact-form" class="schedule-cta-band__btn">
+          <span class="schedule-cta-band__icon" aria-hidden="true">💧</span> SCHEDULE SERVICE
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== SECTION E: BRAND STRIP ===== -->
+    {{> brand-strip}}
+
+    <!-- ===== SECTION F: PILLAR ===== -->
+    <section class="pillar-section" aria-labelledby="pillar-h2" style="background-image: url('{{rootPrefix}}assets/hero/hero-4.jpg');">
+      <div class="pillar-section__overlay"></div>
+      <div class="container pillar-section__inner">
+        <h2 id="pillar-h2" class="pillar-section__title">Your Trusted Pool Service Partner</h2>
+        <p class="pillar-section__subtitle">It's easy to get started with Just Beachy Pools.</p>
+        <div class="pillar-section__cards">
+          <article class="pillar-card">
+            <div class="pillar-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><line x1="16" y1="16" x2="21" y2="21" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <h3>Schedule Inspection</h3>
+          </article>
+          <article class="pillar-card">
+            <div class="pillar-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2 L4 12 L12 22 L20 12 Z" fill="currentColor"/></svg>
+            </div>
+            <h3>Get Weekly Service</h3>
+          </article>
+          <article class="pillar-card">
+            <div class="pillar-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2 L20 6 V14 C20 19 12 22 12 22 C12 22 4 19 4 14 V6 Z" fill="currentColor"/></svg>
+            </div>
+            <h3>Enjoy Your Pool</h3>
+          </article>
+        </div>
+        <a href="{{rootPrefix}}contact-us.html#contact-form" class="pillar-section__cta">REQUEST A QUOTE</a>
+      </div>
+    </section>
+
+    <!-- ===== SECTION G: TESTIMONIALS ===== -->
+    <section class="testimonials">
+      <div class="container">
+        <p class="testimonials__eyebrow">TESTIMONIALS</p>
+        <h2 class="testimonials__title">WHAT OUR CLIENT SAYS</h2>
+        <div class="testimonials__badges">
+          <img src="{{rootPrefix}}assets/sections/trust-badges.webp" alt="Google Yelp Facebook BBB">
+        </div>
+        <span class="testimonials__quote-mark" aria-hidden="true">&ldquo;</span>
+        {{> reviews-carousel}}
+      </div>
+    </section>
+
+    <!-- ===== SECTION H: ESTIMATE FORM ===== -->
+    <section class="svc-estimate">
+      <div class="container">
+        {{> estimate-form}}
+      </div>
+    </section>
+
+  </main>
+
+  {{> footer}}
+
+  <script src="{{rootPrefix}}script.js" defer></script>
+</body>
+</html>
