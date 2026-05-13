@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Just Beachy Pools — residential pool cleaning, repair, and equipment installation serving Spring Hill, Hudson, Land O'Lakes and all of Pasco County, FL." />
+  <title>Just Beachy Pools — Residential Pool Cleaning Services You Can Trust</title>
+
+  <!-- Fonts: Cabin (headings), Inter (body), Outfit (buttons), Sacramento (script accents) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&family=Sacramento&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Build-pipeline CSS layers -->
+  <link rel="stylesheet" href="/css/tokens.css" />
+  <link rel="stylesheet" href="/css/globals.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/home.css" />
+</head>
+<body>
+
+  <!-- =====================================================================
+       HEADER — total 163px (utility 48 + nav 115), sticky
+       ===================================================================== -->
+  <header class="site-header" id="siteHeader">
+    {{> top-bar}}
+    {{> main-nav}}
+  </header>
+
+  <!-- =====================================================================
+       3. HERO — 4-image slideshow with crossfade
+       ===================================================================== -->
+  <section class="hero" id="home">
+    <div class="hero-slideshow" aria-hidden="true">
+      <div class="slide active" style="background-image:url('assets/hero/hero-1.jpg')"></div>
+      <div class="slide" style="background-image:url('assets/hero/hero-2.jpg')"></div>
+      <div class="slide" style="background-image:url('assets/hero/hero-3.jpg')"></div>
+      <div class="slide" style="background-image:url('assets/hero/hero-4.jpg')"></div>
+    </div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <span class="hero__pill">
+          <i class="fa-solid fa-droplet"></i>
+          <h6>YOUR PROFESSIONAL POOL SERVICES</h6>
+        </span>
+
+        <h1 class="hero__h1">
+          Residential Pool
+          <span class="swoosh-target">Cleaning Services
+            <svg class="swoosh" viewBox="0 0 400 30" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M5,20 Q60,5 120,15 T240,15 T360,12 L395,18"
+                    stroke="#FF6602" stroke-width="5" stroke-linecap="round" fill="none"/>
+            </svg>
+          </span>
+          <br/>
+          You Can Trust
+        </h1>
+
+        <p class="hero__sub">WE OFFER POOL SERVICES IN SPRING HILL, HUDSON, LAND O'LAKES AND ALL OF PASCO COUNTY</p>
+        <p class="hero__sub">ALL-INCLUSIVE POOL CLEANING SERVICE STARTING AT $125/MONTH</p>
+
+        <a href="#quote" class="btn-primary btn-primary--large">SCHEDULE FREE ESTIMATE <i class="fa-solid fa-arrow-right"></i></a>
+
+        <img class="hero__trust" src="/assets/sections/trust-badges.webp" alt="Five-star reviews on Google, Yelp and Facebook" width="320" height="60" loading="lazy" />
+      </div>
+
+      <!-- Glass quote card -->
+      <aside class="quote-card" id="quote">
+        <h4 class="quote-card__title">GET YOUR POOL SERVICE QUOTE</h4>
+        <form class="quote-form" onsubmit="event.preventDefault(); alert('Form is a demo placeholder.');">
+          <div class="grid grid--2">
+            <div class="qfield"><input type="text" name="first" placeholder="First Name" required><label>First Name</label></div>
+            <div class="qfield"><input type="text" name="last" placeholder="Last Name" required><label>Last Name</label></div>
+          </div>
+          <div class="grid grid--2">
+            <div class="qfield qfield--phone">
+              <div class="phone-input">
+                <span class="phone-input__flag" aria-hidden="true">
+                  <svg viewBox="0 0 24 16" width="22" height="14"><rect width="24" height="16" fill="#B22234"/><g fill="#fff"><rect y="1.23" width="24" height="1.23"/><rect y="3.69" width="24" height="1.23"/><rect y="6.15" width="24" height="1.23"/><rect y="8.62" width="24" height="1.23"/><rect y="11.08" width="24" height="1.23"/><rect y="13.54" width="24" height="1.23"/></g><rect width="10" height="8.62" fill="#3C3B6E"/></svg>
+                  <i class="fa-solid fa-caret-down"></i>
+                </span>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+              </div>
+              <label>Phone</label>
+            </div>
+            <div class="qfield"><input type="email" name="email" placeholder="Email Address" required><label>Email Address</label></div>
+          </div>
+          <div class="qfield"><input type="text" name="addr1" placeholder=""><label>Address Line 1</label></div>
+          <div class="qfield"><input type="text" name="addr2" placeholder=""><label>Address Line 2</label></div>
+          <div class="grid grid--2">
+            <div class="qfield"><input type="text" name="city" placeholder=""><label>City</label></div>
+            <div class="qfield">
+              <select name="state">
+                <option>Florida</option><option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option><option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option><option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option><option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option><option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option><option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option><option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option><option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option><option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option>
+              </select>
+              <label>State</label>
+            </div>
+          </div>
+          <div class="grid grid--2">
+            <div class="qfield"><input type="text" name="zip" placeholder="" inputmode="numeric"><label>Zip Code</label></div>
+            <div></div>
+          </div>
+
+          <div class="consent">
+            <strong>Communication Consent <em>*</em></strong>
+            <label class="consent__line">
+              <input type="checkbox" required>
+              <span>I agree to receive marketing messaging from Just Beachy Pools at the phone number provided above. I understand I will receive 2 messages a month, data rates may apply, reply STOP to opt out.</span>
+            </label>
+          </div>
+
+          <button type="submit" class="form-submit">Submit</button>
+        </form>
+      </aside>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       4. WHAT WE DO BEST
+       ===================================================================== -->
+  <section class="section best" id="about">
+    <div class="container split">
+      <div class="split__copy">
+        <p class="eyebrow">WHAT WE DO BEST</p>
+        <h2 class="h2-orange">CRYSTAL CLEAR POOLS YEAR ROUND</h2>
+        <p class="best__lead">Just Beachy Pools, based in Spring Hill, Florida, offers a comprehensive range of pool maintenance and repair services tailored to meet the unique needs of each client. Their team of experienced technicians is dedicated to ensuring pools are clean, safe, and well-maintained.</p>
+
+        <ul class="checklist">
+          <li><i class="fa-solid fa-check"></i> Residential Pool Service</li>
+          <li><i class="fa-solid fa-check"></i> New Equipment Installation</li>
+          <li><i class="fa-solid fa-check"></i> Pool Equipment Repairs</li>
+          <li><i class="fa-solid fa-check"></i> Green Pool Treatment</li>
+        </ul>
+
+        <a href="#about" class="btn-primary">LEARN MORE ABOUT JUST BEACHY POOLS</a>
+      </div>
+
+      <div class="split__media">
+        <div class="best-photo">
+          <img loading="lazy" src="/assets/sections/what-we-do-photo.png" alt="Pool service in action"/>
+          <img class="best-photo__badge" loading="lazy" src="/assets/logos/logo-circular.png" alt="Just Beachy Pools" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       5. TRUSTED POOL SERVICE PARTNER (3 steps)
+       ===================================================================== -->
+  <section class="partner">
+    <div class="partner__bg" aria-hidden="true"></div>
+    <div class="partner__overlay" aria-hidden="true"></div>
+    <div class="container partner__inner">
+      <h2 class="h2-white">Your Trusted Pool Service Partner</h2>
+      <p class="lead-white">It's easy to get started with Just Beachy Pools.</p>
+
+      <div class="step-grid">
+        <article class="step-card">
+          <span class="step-card__icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+          <h3>Schedule Inspection</h3>
+        </article>
+        <article class="step-card">
+          <span class="step-card__icon"><i class="fa-solid fa-water"></i></span>
+          <h3>Get Weekly Service</h3>
+        </article>
+        <article class="step-card">
+          <span class="step-card__icon"><i class="fa-solid fa-shield-halved"></i></span>
+          <h3>Enjoy Your Pool</h3>
+        </article>
+      </div>
+
+      <a href="#quote" class="btn-primary btn-primary--large center-btn">SCHEDULE FREE ESTIMATE</a>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       6. REVIEWS — Our Clients Love Us!
+       ===================================================================== -->
+  <section class="section reviews" id="reviews">
+    <div class="container">
+      <h2 class="h2-blue center">Our Clients Love Us!</h2>
+
+      <img class="reviews__badge" src="/assets/sections/reviews-badge.png" alt="Google Yelp Facebook BBB reviews badge" loading="lazy" />
+
+      <div class="reviews__layout">
+        <aside class="reviews__summary">
+          <h3>Excellent</h3>
+          <p class="reviews__brand">Just Beachy Pools</p>
+          <div class="reviews__rating">
+            <span class="reviews__num">4.3</span>
+            <div class="stars stars--lg"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+          </div>
+          <p class="reviews__count">Based on 15 reviews</p>
+          <div class="reviews__cta">
+            <a href="#" class="badge-link">See all reviews</a>
+            <a href="#" class="badge-link">review us on <span class="g-mark">G</span></a>
+          </div>
+        </aside>
+
+        <div class="reviews__carousel">
+          <!--
+            PRODUCTION TODO: replace the six static placeholder cards below with the
+            live Google reviews widget (Elfsight / SociableKit / Trustindex / Google
+            Places API) so real Google reviews render here as on justbeachypools.com.
+            The placeholder cards keep the design + JS carousel working as a fallback
+            and demonstrate the visual layout.
+          -->
+          <button class="reviews__chev reviews__chev--prev" id="reviewsPrev" aria-label="Previous reviews"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="reviews__viewport">
+            <div class="reviews__track" id="reviewsTrack">
+              <article class="review-card" aria-label="Sample review">
+                <div class="review-card__head">
+                  <span class="avatar avatar--initial" style="background:#FF6602">A</span>
+                  <div><strong>Customer A.</strong><small>placeholder</small></div>
+                  <span class="google-mark" aria-hidden="true"><i class="fa-brands fa-google"></i></span>
+                </div>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>Sample review card — replace with the live Google reviews widget for production. The card layout demonstrates avatar, name, timestamp, Google source mark, star rating, and body text.</p>
+              </article>
+
+              <article class="review-card" aria-label="Sample review">
+                <div class="review-card__head">
+                  <span class="avatar avatar--initial" style="background:#0077BC">B</span>
+                  <div><strong>Customer B.</strong><small>placeholder</small></div>
+                  <span class="google-mark" aria-hidden="true"><i class="fa-brands fa-google"></i></span>
+                </div>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>Sample review card — placeholder content. The live widget will pull real reviews from Google so this static markup can be removed once the integration is in place.</p>
+              </article>
+
+              <article class="review-card" aria-label="Sample review">
+                <div class="review-card__head">
+                  <span class="avatar avatar--initial" style="background:#005A93">C</span>
+                  <div><strong>Customer C.</strong><small>placeholder</small></div>
+                  <span class="google-mark" aria-hidden="true"><i class="fa-brands fa-google"></i></span>
+                </div>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>Sample review card — placeholder content. This card also demonstrates the owner-response block layout below.</p>
+                <div class="review-card__response"><em>Response from the owner:</em> Sample owner-response placeholder text.</div>
+              </article>
+
+              <article class="review-card" aria-label="Sample review">
+                <div class="review-card__head">
+                  <span class="avatar avatar--initial" style="background:#FF6602">D</span>
+                  <div><strong>Customer D.</strong><small>placeholder</small></div>
+                  <span class="google-mark" aria-hidden="true"><i class="fa-brands fa-google"></i></span>
+                </div>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>Sample review card — placeholder content. The carousel auto-advances every 6 seconds and supports touch swipe + chevron + dot navigation.</p>
+              </article>
+
+              <article class="review-card" aria-label="Sample review">
+                <div class="review-card__head">
+                  <span class="avatar avatar--initial" style="background:#0077BC">E</span>
+                  <div><strong>Customer E.</strong><small>placeholder</small></div>
+                  <span class="google-mark" aria-hidden="true"><i class="fa-brands fa-google"></i></span>
+                </div>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>Sample review card — placeholder content. Real customer reviews will appear here once the live widget is integrated.</p>
+              </article>
+
+              <article class="review-card" aria-label="Sample review">
+                <div class="review-card__head">
+                  <span class="avatar avatar--initial" style="background:#005A93">F</span>
+                  <div><strong>Customer F.</strong><small>placeholder</small></div>
+                  <span class="google-mark" aria-hidden="true"><i class="fa-brands fa-google"></i></span>
+                </div>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>Sample review card — placeholder content. Pause-on-hover is enabled on the carousel so visitors can read at their own pace.</p>
+              </article>
+            </div>
+          </div>
+          <button class="reviews__chev reviews__chev--next" id="reviewsNext" aria-label="Next reviews"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="reviews__dots" id="reviewsDots"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       7. TRUST BANNER (background fixed)
+       ===================================================================== -->
+  <section class="trust-banner">
+    <div class="trust-banner__overlay" aria-hidden="true"></div>
+    <div class="container trust-banner__inner">
+      <h2 class="h2-white">Trusted by 100+ homes throughout Spring Hill and neighboring cities.</h2>
+      <p class="trust-banner__lead">We treat our customers like family, which is why we crafted our Pool Service plans to service our customers with the utmost professional service so you can enjoy your pool worry free.</p>
+      <img class="trust-banner__badges" src="/assets/sections/trust-badges.webp" alt="Google Yelp Facebook reviews" loading="lazy" />
+      <a href="reviews.html" class="btn-white-pill">READ OUR REVIEWS</a>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       8. SPECIALIZED POOL SERVICES (3×2 grid)
+       ===================================================================== -->
+  <section class="section services" id="services">
+    <div class="container">
+      <h2 class="h2-blue center">Specialized Pool Services To Meet Your Demands</h2>
+      <p class="services__lead center">At Just Beachy Pools, we offer a variety of services to help keep your pool at pristine condition year round.</p>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-card__image">
+            <img loading="lazy" src="/assets/sections/service-weekly.jpg" alt="Weekly Service" />
+          </div>
+          <div class="service-card__badge"><i class="fa-solid fa-check"></i></div>
+          <div class="service-card__body">
+            <h3>Weekly Service</h3>
+            <p>Our Weekly Service provides consistent, worry-free pool maintenance to keep your water clean, safe, and sparkling.</p>
+            <a href="#" class="btn-primary">LEARN MORE</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__image">
+            <img loading="lazy" src="/assets/sections/service-repairs.jpg" alt="Equipment Repairs" />
+          </div>
+          <div class="service-card__badge"><i class="fa-solid fa-check"></i></div>
+          <div class="service-card__body">
+            <h3>Equipment Repairs</h3>
+            <p>Our Equipment Repair service keeps your pool running smoothly by quickly diagnosing and fixing issues with pumps, filters, heaters, and more.</p>
+            <a href="#" class="btn-primary">LEARN MORE</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__image">
+            <img loading="lazy" src="/assets/sections/service-installations.jpg" alt="New Installations" />
+          </div>
+          <div class="service-card__badge"><i class="fa-solid fa-check"></i></div>
+          <div class="service-card__body">
+            <h3>New Installations</h3>
+            <p>Our New Pool Equipment Installation service ensures your pool runs efficiently with the latest technology.</p>
+            <a href="#" class="btn-primary">LEARN MORE</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__image">
+            <img loading="lazy" src="/assets/sections/service-green.jpg" alt="Green To Clean" />
+          </div>
+          <div class="service-card__badge"><i class="fa-solid fa-check"></i></div>
+          <div class="service-card__body">
+            <h3>Green To Clean</h3>
+            <p>Our Green to Clean service is designed to rescue pools overtaken by algae or neglect.</p>
+            <a href="#" class="btn-primary">LEARN MORE</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__image">
+            <img loading="lazy" src="/assets/sections/service-chemicals.jpg" alt="Chemicals Only" />
+          </div>
+          <div class="service-card__badge"><i class="fa-solid fa-check"></i></div>
+          <div class="service-card__body">
+            <h3>Chemicals Only</h3>
+            <p>Our Chemical Only Cleaning service keeps your pool water perfectly balanced using high-quality chemicals.</p>
+            <a href="#" class="btn-primary">LEARN MORE</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__image">
+            <img loading="lazy" src="/assets/sections/service-drain.jpg" alt="Pool Drain & Start-Ups" />
+          </div>
+          <div class="service-card__badge"><i class="fa-solid fa-check"></i></div>
+          <div class="service-card__body">
+            <h3>Pool Drain &amp; Start-Ups</h3>
+            <p>Our Pool Drain &amp; Start-Up service is perfect for refreshing old or neglected pools.</p>
+            <a href="#" class="btn-primary">LEARN MORE</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       9. BRAND LOGOS STRIP
+       ===================================================================== -->
+  <section class="brand-strip">
+    <div class="container">
+      <h3 class="h3-blue center">We Are Experts With:</h3>
+      <div class="brand-strip__logos">
+        <img class="brand-png" src="/assets/sections/brand-hayward.png" alt="Hayward" loading="lazy" />
+        <img class="brand-png" src="/assets/sections/brand-jandy.png" alt="Jandy" loading="lazy" />
+        <img class="brand-png" src="/assets/sections/brand-pentair.png" alt="Pentair" loading="lazy" />
+        <img class="brand-png" src="/assets/sections/brand-zodiac.png" alt="Zodiac" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       10. WHY CHOOSE US
+       ===================================================================== -->
+  <section class="why">
+    <div class="why__bg" aria-hidden="true"></div>
+    <div class="why__overlay" aria-hidden="true"></div>
+    <div class="container why__inner">
+      <div class="why__copy">
+        <p class="eyebrow eyebrow--white">WHY CHOOSE US</p>
+        <h2 class="h2-orange why__h2">Experience the Just Beachy Difference To Pool Service</h2>
+        <p class="why__lead">Just Beachy Pools delivers reliable, high-quality pool care for homeowners across Spring Hill and surrounding areas. From weekly maintenance to green pool recovery and equipment repairs, our experienced team uses premium chemicals and proven methods to keep your pool clean, safe, and swim-ready year-round. Trusted, transparent, and always professional—we make pool ownership easy.</p>
+      </div>
+      <div class="why__grid">
+        <article class="why-card">
+          <span class="why-card__icon"><i class="fa-solid fa-angles-right"></i></span>
+          <div>
+            <h3>Experience and Expertise</h3>
+            <p>Over 20 years of experience in the pool service industry spanning across 2 counties.</p>
+          </div>
+        </article>
+        <article class="why-card">
+          <span class="why-card__icon"><i class="fa-solid fa-angles-right"></i></span>
+          <div>
+            <h3>Proven Track Record</h3>
+            <p>Servicing over 100+ customers a year while maintaining a 5 star rating from our clients.</p>
+          </div>
+        </article>
+        <article class="why-card">
+          <span class="why-card__icon"><i class="fa-solid fa-angles-right"></i></span>
+          <div>
+            <h3>Quality and Reliability</h3>
+            <p>When you choose Just Beachy Pools, you have a friend in the industry you can trust.</p>
+          </div>
+        </article>
+        <article class="why-card">
+          <span class="why-card__icon"><i class="fa-solid fa-angles-right"></i></span>
+          <div>
+            <h3>Premium Support</h3>
+            <p>We are available day and night for our customers. We take caring for your pool seriously.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       11. SERVICE AREAS
+       ===================================================================== -->
+  <section class="section areas">
+    <div class="container split">
+      <div class="split__copy">
+        <h2 class="h2-blue">Our Service Areas</h2>
+        <ul class="areas__list">
+          <li><i class="fa-solid fa-location-dot"></i> Spring Hill</li>
+          <li><i class="fa-solid fa-location-dot"></i> Hudson</li>
+          <li><i class="fa-solid fa-location-dot"></i> Shady Hills</li>
+          <li><i class="fa-solid fa-location-dot"></i> New Port Richey</li>
+          <li><i class="fa-solid fa-location-dot"></i> Angeline</li>
+          <li><i class="fa-solid fa-location-dot"></i> River Ridge</li>
+          <li><i class="fa-solid fa-location-dot"></i> Hudson Beach</li>
+          <li><i class="fa-solid fa-location-dot"></i> Land O'Lakes</li>
+          <li><i class="fa-solid fa-location-dot"></i> Port Richey</li>
+          <li><i class="fa-solid fa-location-dot"></i> Dade City</li>
+          <li><i class="fa-solid fa-location-dot"></i> Odessa</li>
+          <li><i class="fa-solid fa-location-dot"></i> Brooksville</li>
+          <li><i class="fa-solid fa-location-dot"></i> Hernando Beach</li>
+          <li><i class="fa-solid fa-location-dot"></i> And More!</li>
+        </ul>
+      </div>
+      <div class="split__media">
+        <iframe
+          class="areas__map"
+          src="https://www.google.com/maps?q=Just+Beachy+Pools+Spring+Hill+FL&output=embed"
+          title="Just Beachy Pools — Spring Hill, FL"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       12. FAQ
+       ===================================================================== -->
+  <section class="faq">
+    <div class="faq__bg" aria-hidden="true"></div>
+    <div class="faq__overlay" aria-hidden="true"></div>
+    <div class="container faq__inner">
+      <h2 class="h2-dark center">Got Questions?</h2>
+      <p class="faq__lead center">We've shared a series of our most common questions and answered them. If you need additional information or have other questions, never hesitate to reach out to us.</p>
+
+      <div class="faq__grid">
+        <div class="faq__col">
+          <details class="faq-item" open>
+            <summary>What areas do you serve?</summary>
+            <div class="faq-body">We proudly serve Spring Hill and surrounding areas, including Spring Hill and about a 15 mile radius.</div>
+          </details>
+          <details class="faq-item">
+            <summary>What's included in your Full Service plan?</summary>
+            <div class="faq-body">Weekly skim, brush, vacuum, filter check, water testing, full chemical balance, and a written report of every visit.</div>
+          </details>
+          <details class="faq-item">
+            <summary>Do you offer chemical-only service?</summary>
+            <div class="faq-body">Yes — perfect for DIY pool owners. We handle the chemistry weekly while you handle the rest.</div>
+          </details>
+          <details class="faq-item">
+            <summary>What is the "Green to Clean" service?</summary>
+            <div class="faq-body">An intensive multi-day treatment to restore an algae-ridden pool to clear, swimmable water using premium shock and clarifiers.</div>
+          </details>
+          <details class="faq-item">
+            <summary>Do you provide start-up services for new construction &amp; upgraded pools?</summary>
+            <div class="faq-body">Absolutely. We handle the chemical start-up for plaster, pebble, and resurfaced pools so the finish cures properly.</div>
+          </details>
+        </div>
+        <div class="faq__col">
+          <details class="faq-item" open>
+            <summary>How much does weekly service cost?</summary>
+            <div class="faq-body">Prices vary based on your pool's size and condition. Chemical Only service starts at $100+/month and Full Service starts at $140+/month.</div>
+          </details>
+          <details class="faq-item">
+            <summary>Can you repair or install pool equipment?</summary>
+            <div class="faq-body">Yes — pumps, filters, heaters, salt cells, automation, and lighting. We're certified with Hayward, Jandy, Pentair, and Zodiac.</div>
+          </details>
+          <details class="faq-item">
+            <summary>What does your Drain &amp; Clean service include?</summary>
+            <div class="faq-body">Drain, acid-wash where needed, refill, and full chemical start-up to balance the new water.</div>
+          </details>
+          <details class="faq-item">
+            <summary>Do I need to be home during service visits?</summary>
+            <div class="faq-body">No — most of our customers aren't home. We just need gate access. We'll leave a service slip every visit.</div>
+          </details>
+          <details class="faq-item">
+            <summary>How do I get started with service?</summary>
+            <div class="faq-body">Fill out the form below or call us at (352) 678-4100. We'll schedule a free on-site estimate within a few days.</div>
+          </details>
+        </div>
+      </div>
+
+      <div class="faq__cta">
+        <p>Still have questions?</p>
+        <a href="#contact" class="btn-primary btn-primary--large">CONTACT US</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       13. GET YOUR FREE ESTIMATE
+       ===================================================================== -->
+  <section class="section estimate" id="contact">
+    <div class="container center">
+      <h2 class="h2-blue">Get Your Free Estimate</h2>
+      <p class="estimate__sub">Complete the form below and we will contact you to discuss your pool problem!</p>
+
+      <form class="estimate-form" onsubmit="event.preventDefault(); alert('Form is a demo placeholder.');">
+        <div class="estimate-form__trust">
+          <img src="/assets/sections/trust-badges.webp" alt="Google Yelp Facebook reviews" />
+        </div>
+
+        <div class="estimate-form__fields">
+          <label class="estimate-field"><span>Name <em>*</em></span><input type="text" name="name" required></label>
+          <label class="estimate-field">
+            <span>Phone <em>*</em></span>
+            <div class="phone-input phone-input--light">
+              <span class="phone-input__flag" aria-hidden="true">
+                <svg viewBox="0 0 24 16" width="22" height="14"><rect width="24" height="16" fill="#B22234"/><g fill="#fff"><rect y="1.23" width="24" height="1.23"/><rect y="3.69" width="24" height="1.23"/><rect y="6.15" width="24" height="1.23"/><rect y="8.62" width="24" height="1.23"/><rect y="11.08" width="24" height="1.23"/><rect y="13.54" width="24" height="1.23"/></g><rect width="10" height="8.62" fill="#3C3B6E"/></svg>
+                <i class="fa-solid fa-caret-down"></i>
+              </span>
+              <input type="tel" name="phone" required>
+            </div>
+          </label>
+          <label class="estimate-field"><span>Email <em>*</em></span><input type="email" name="email" required></label>
+
+          <label class="estimate-field">
+            <span>Service Needed <em>*</em></span>
+            <select name="service" required>
+              <option value="">Select One</option>
+              <option>Weekly Pool Service</option>
+              <option>Commercial Pool Service</option>
+              <option>Equipment Repair</option>
+              <option>Equipment Installation</option>
+              <option>Green To Clean</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label class="estimate-field"><span>Zip Code <em>*</em></span><input type="text" name="zip" inputmode="numeric" required></label>
+          <fieldset class="estimate-field estimate-field--radio">
+            <legend>Are You A New Customer? <em>*</em></legend>
+            <label class="radio"><input type="radio" name="new-customer" value="yes" checked> Yes</label>
+            <label class="radio"><input type="radio" name="new-customer" value="no"> No</label>
+          </fieldset>
+        </div>
+
+        <button type="submit" class="form-submit form-submit--wide">Submit</button>
+      </form>
+
+      <h4 class="estimate__phone-h4">
+        Or For Faster Response Call:<br/>
+        <a href="tel:3526784100">(352) 678-4100</a>
+      </h4>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       14. FOOTER
+       ===================================================================== -->
+  {{> footer}}
+
+  <!-- =====================================================================
+       FLOATING WIDGETS
+       ===================================================================== -->
+  <aside class="rating-widget" id="ratingWidget" aria-label="Google rating">
+    <span class="rating-widget__g"><i class="fa-brands fa-google"></i></span>
+    <div class="rating-widget__body">
+      <small>Google Rating</small>
+      <div class="rating-widget__line"><strong>4.3</strong> <span class="stars stars--sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></div>
+      <small>Based on 15 reviews</small>
+    </div>
+    <button class="rating-widget__close" id="ratingClose" aria-label="Dismiss">&times;</button>
+  </aside>
+
+  <aside class="recaptcha-badge" aria-label="reCAPTCHA">
+    <div class="recaptcha-badge__inner">
+      <i class="fa-solid fa-shield-halved"></i>
+      <div><strong>protected by</strong><br/><span>reCAPTCHA</span></div>
+    </div>
+    <div class="recaptcha-badge__links"><a href="#">Privacy</a> - <a href="#">Terms</a></div>
+  </aside>
+
+  <script src="/js/nav.js"></script>
+  <script src="/js/carousel.js"></script>
+  <script src="/js/forms.js"></script>
+  <script src="/js/faq.js"></script>
+</body>
+</html>

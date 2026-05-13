@@ -1,0 +1,11 @@
+{
+  "name": "justbeachypools-replica",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node build.js",
+    "build:prod": "URL_MODE=prod node build.js",
+    "serve": "npx --yes serve dist -p 3000",
+    "clean": "rm -rf dist"
+  }
+}

@@ -1,39 +1,41 @@
-<!--
-  Placeholder reviews carousel — TODO: replace with live Google Reviews widget
-  (Elfsight / Trustindex / Google Places API) in production.
--->
-<div class="reviews__carousel reviews__carousel--standalone" aria-live="polite">
-  <button class="reviews__chev reviews__chev--prev" aria-label="Previous reviews"><i class="fa-solid fa-chevron-left"></i></button>
-  <div class="reviews__viewport">
-    <div class="reviews__track">
-      <article class="review-card" aria-label="Sample review">
-        <div class="review-card__head">
-          <span class="avatar avatar--initial" style="background:#FF6602">A</span>
-          <div><strong>Customer A.</strong><small>placeholder</small></div>
-          <span class="google-mark" aria-hidden="true"><i class="fa-brands fa-google"></i></span>
-        </div>
-        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-        <p>Placeholder review — replace with live Google Reviews data once API key / widget is wired.</p>
-      </article>
-      <article class="review-card" aria-label="Sample review">
-        <div class="review-card__head">
-          <span class="avatar avatar--initial" style="background:#0077BC">B</span>
-          <div><strong>Customer B.</strong><small>placeholder</small></div>
-          <span class="google-mark" aria-hidden="true"><i class="fa-brands fa-google"></i></span>
-        </div>
-        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-        <p>Placeholder review — placeholder content.</p>
-      </article>
-      <article class="review-card" aria-label="Sample review">
-        <div class="review-card__head">
-          <span class="avatar avatar--initial" style="background:#005A93">C</span>
-          <div><strong>Customer C.</strong><small>placeholder</small></div>
-          <span class="google-mark" aria-hidden="true"><i class="fa-brands fa-google"></i></span>
-        </div>
-        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-        <p>Placeholder review — placeholder content.</p>
-      </article>
+  <!-- =====================================================================
+       REVIEWS CAROUSEL — placeholder cards drive the JS carousel
+       Replace with live Google Reviews widget (Elfsight / Trustindex) in prod.
+       ===================================================================== -->
+  <div class="reviews__carousel">
+    <button class="reviews__chev reviews__chev--prev" id="reviewsPrev" aria-label="Previous reviews"><i class="fa-solid fa-chevron-left"></i></button>
+    <div class="reviews__viewport">
+      <div class="reviews__track" id="reviewsTrack">
+        <article class="review-card" aria-label="Sample review">
+          <div class="review-card__head">
+            <span class="avatar avatar--initial" style="background:#FF6602">A</span>
+            <div><strong>Customer A.</strong><small>placeholder</small></div>
+            <span class="google-mark" aria-hidden="true"><i class="fa-brands fa-google"></i></span>
+          </div>
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>Sample review card — replace with the live Google reviews widget for production.</p>
+        </article>
+        <article class="review-card" aria-label="Sample review">
+          <div class="review-card__head">
+            <span class="avatar avatar--initial" style="background:#0077BC">B</span>
+            <div><strong>Customer B.</strong><small>placeholder</small></div>
+            <span class="google-mark" aria-hidden="true"><i class="fa-brands fa-google"></i></span>
+          </div>
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>Sample review card — placeholder content.</p>
+        </article>
+        <article class="review-card" aria-label="Sample review">
+          <div class="review-card__head">
+            <span class="avatar avatar--initial" style="background:#005A93">C</span>
+            <div><strong>Customer C.</strong><small>placeholder</small></div>
+            <span class="google-mark" aria-hidden="true"><i class="fa-brands fa-google"></i></span>
+          </div>
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>Sample review card — placeholder content.</p>
+          <div class="review-card__response"><em>Response from the owner:</em> Sample owner-response placeholder text.</div>
+        </article>
+      </div>
     </div>
+    <button class="reviews__chev reviews__chev--next" id="reviewsNext" aria-label="Next reviews"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="reviews__dots" id="reviewsDots"></div>
   </div>
-  <button class="reviews__chev reviews__chev--next" aria-label="Next reviews"><i class="fa-solid fa-chevron-right"></i></button>
-</div>

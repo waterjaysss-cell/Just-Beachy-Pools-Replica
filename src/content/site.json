@@ -1,0 +1,107 @@
+{
+  "site": {
+    "name": "Just Beachy Pools",
+    "tagline": "Quality Pool Service in Spring Hill and For the Greater Land O' Lakes Areas That You Can Trust.",
+    "phone_display": "(352) 296-3583",
+    "phone_tel": "+13522963583",
+    "secondary_phone_display": "(352) 678-4100",
+    "secondary_phone_tel": "+13526784100",
+    "email": "office@justbeachypools.com",
+    "address": {
+      "city": "Spring Hill",
+      "state": "FL",
+      "full": "Spring Hill, FL"
+    },
+    "social": {
+      "facebook": "https://www.facebook.com/share/1BXTDvovRo/",
+      "instagram": "https://www.instagram.com/justbeachypools",
+      "linkedin": "https://www.linkedin.com/company/justbeachypools/"
+    },
+    "domain_prod": "justbeachypools.com",
+    "url_mode": "local"
+  },
+  "nav": {
+    "primary": [
+      {
+        "label": "ABOUT",
+        "href": "#",
+        "children": [
+          { "label": "ABOUT US", "href": "/about-us/" },
+          { "label": "SERVICE AREAS", "href": "/service-area/" }
+        ]
+      },
+      {
+        "label": "SERVICES",
+        "href": "#",
+        "children": [
+          { "label": "CLEANING", "href": "/pool-cleaning/", "children": [
+            { "label": "WEEKLY POOL SERVICE", "href": "/pool-cleaning/weekly-pool-service/" },
+            { "label": "FILTER CLEANING", "href": "/pool-cleaning/filter-cleaning/" },
+            { "label": "SPA CLEANING", "href": "/pool-cleaning/spa-cleaning/" },
+            { "label": "TILE CLEANING", "href": "/pool-cleaning/pool-tile-cleaning/" }
+          ]},
+          { "label": "REPAIRS", "href": "/pool-repairs/", "children": [
+            { "label": "POOL FILTER REPAIR", "href": "/pool-repairs/pool-filter-repair/" },
+            { "label": "POOL HEATER REPAIR", "href": "/pool-repairs/pool-heater-repair/" },
+            { "label": "POOL PUMP REPAIR", "href": "/pool-repairs/pool-pump-repair/" },
+            { "label": "SPA REPAIR", "href": "/spa-repair/" }
+          ]},
+          { "label": "INSTALLATIONS", "href": "/pool-equipment-installations/", "children": [
+            { "label": "POOL FILTER INSTALL", "href": "/pool-equipment-installations/pool-filter-installation/" },
+            { "label": "POOL HEATER INSTALL", "href": "/pool-equipment-installations/pool-heater-installation/" },
+            { "label": "POOL PUMP INSTALL", "href": "/pool-equipment-installations/pool-pump-installation/" },
+            { "label": "POOL LIGHT INSTALL", "href": "/pool-equipment-installations/pool-light-installation/" }
+          ]},
+          { "label": "OTHER SERVICES", "href": "/pool-services/", "children": [
+            { "label": "ACID WASH", "href": "/pool-services/acid-wash/" },
+            { "label": "GREEN POOL CLEAN", "href": "/pool-services/green-to-clean/" },
+            { "label": "ALGAE REMOVAL", "href": "/pool-services/algae-removal/" },
+            { "label": "POOL DEEP CLEANING", "href": "/pool-services/pool-deep-cleaning/" },
+            { "label": "POOL START UP SERVICES", "href": "/pool-services/pool-start-up-services/" },
+            { "label": "AUTOMATION", "href": "/pool-services/pool-automation/" },
+            { "label": "SALT SYSTEMS", "href": "/pool-services/salt-systems/" },
+            { "label": "SAND CHANGES", "href": "/pool-services/sand-changes/" }
+          ]},
+          { "label": "POOL LEAK DETECTION", "href": "/pool-leak-detection/" }
+        ]
+      },
+      { "label": "REVIEWS", "href": "/reviews/" },
+      { "label": "NEWS", "href": "/news/" },
+      { "label": "CAREERS", "href": "/careers/" },
+      { "label": "CONTACT", "href": "/contact-us/" }
+    ],
+    "cta": { "label": "SCHEDULE SERVICE", "href": "/schedule-service/" }
+  },
+  "footer": {
+    "tagline": "Just Beachy Pools, based in Spring Hill, Florida, offers a comprehensive range of pool maintenance and repair services tailored to meet the unique needs of each client.",
+    "columns": [
+      {
+        "title": "Company",
+        "links": [
+          { "label": "About Us", "href": "/about-us/" },
+          { "label": "Leadership", "href": "#" },
+          { "label": "Careers", "href": "/careers/" },
+          { "label": "Article & News", "href": "/news/" },
+          { "label": "Locations", "href": "/service-area/" }
+        ]
+      },
+      {
+        "title": "Help",
+        "links": [
+          { "label": "Email Us", "href": "mailto:office@justbeachypools.com" },
+          { "label": "Help & FAQ", "href": "#" },
+          { "label": "Service Call", "href": "/schedule-service/" },
+          { "label": "Report a Problem", "href": "/contact-us/" },
+          { "label": "Customer Support", "href": "/contact-us/" }
+        ]
+      }
+    ],
+    "legal": [
+      { "label": "Term of use", "href": "#" },
+      { "label": "Privacy Policy", "href": "/privacy-policy/" },
+      { "label": "Cookie Policy", "href": "#" }
+    ],
+    "copyright": "Copyright © 2025 Just Beachy Pools, All rights reserved.",
+    "credit": "Pool Service Marketing by Pool Profits"
+  }
+}

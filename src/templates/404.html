@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Page not found." />
+  <title>Page Not Found — {{site.name}}</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&family=Sacramento&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="/css/tokens.css" />
+  <link rel="stylesheet" href="/css/globals.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/404.css" />
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    {{> top-bar}}
+    {{> main-nav}}
+  </header>
+
+  <!-- TODO (Prompt 8): 404 template -->
+  <main class="container center">
+    <h1>404 — Page Not Found</h1>
+    <p>The page you're looking for doesn't exist. <a href="/index.html">Return home.</a></p>
+  </main>
+
+  {{> footer}}
+
+  <script src="/js/nav.js"></script>
+  <script src="/js/carousel.js"></script>
+  <script src="/js/forms.js"></script>
+  <script src="/js/faq.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Careers at Just Beachy Pools — join our Spring Hill, FL pool service team. Current openings for Service Tech and Repair Tech." />
+  <title>💧 #1 Careers Spring Hill, FL - Just Beachy Pools</title>
+
+  <!-- Fonts: Cabin (headings), Inter (body), Outfit (buttons), Sacramento (script accents) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&family=Sacramento&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Build-pipeline CSS layers -->
+  <link rel="stylesheet" href="/css/tokens.css" />
+  <link rel="stylesheet" href="/css/globals.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/careers.css" />
+</head>
+<body>
+
+  <!-- =====================================================================
+       HEADER (reused)
+       ===================================================================== -->
+  <header class="site-header" id="siteHeader">
+    {{> top-bar}}
+    {{> main-nav}}
+  </header>
+
+  <!-- =====================================================================
+       A. HERO BANNER
+       ===================================================================== -->
+  <section class="careers-hero">
+    <div class="careers-hero__overlay" aria-hidden="true"></div>
+    <div class="careers-hero__inner">
+      <h1>Careers</h1>
+      <h4>Work With Just Beachy Pools</h4>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       B. INTRO + JOB CARDS
+       ===================================================================== -->
+  <section class="careers-intro">
+    <div class="container">
+      <h2>We Are Always Looking For Great Talent!</h2>
+      <p class="intro-sub">Current openings for the season.</p>
+
+      <div class="job-grid">
+        <article class="job-card">
+          <div class="job-card__img">
+            <img src="/assets/careers/service-tech.jpg" alt="Service Tech" width="220" height="220" loading="lazy" />
+          </div>
+          <div class="job-card__body">
+            <h3>Service Tech</h3>
+            <p>Join our team as a certified pool tech! Help us service our weekly customers with the utmost care and professionalism.</p>
+          </div>
+        </article>
+
+        <article class="job-card">
+          <div class="job-card__img">
+            <img src="/assets/careers/repair-tech.png" alt="Repair Tech" width="220" height="220" loading="lazy" />
+          </div>
+          <div class="job-card__body">
+            <h3>Repair Tech</h3>
+            <p>Join our team as a certified pool repair tech! Help us fix equipment issues and new installs for our customers.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       C. "INTERESTED?" CTA
+       ===================================================================== -->
+  <section class="careers-cta">
+    <div class="container">
+      <!-- TODO: typo — flag for redesign ("join" → "joining") -->
+      <h2>Interested in join our team?</h2>
+      <a href="contact-us.html" class="btn-blue-pill">CONTACT US</a>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       D. "GET YOUR FREE ESTIMATE" FORM (reused from homepage)
+       ===================================================================== -->
+  <section class="section estimate estimate-form-section" id="estimate">
+    <div class="container center">
+      <h2 class="h2-blue">Get Your Free Estimate</h2>
+      <p class="estimate__sub">Complete the form below and we will contact you to discuss your pool problem!</p>
+
+      <form class="estimate-form" onsubmit="event.preventDefault(); alert('Form is a demo placeholder.');">
+        <div class="estimate-form__trust">
+          <img src="/assets/sections/trust-badges.webp" alt="Google Yelp Facebook reviews" />
+        </div>
+
+        <div class="estimate-form__fields">
+          <label class="estimate-field"><span>Name <em>*</em></span><input type="text" name="name" required></label>
+          <label class="estimate-field">
+            <span>Phone <em>*</em></span>
+            <div class="phone-input phone-input--light">
+              <span class="phone-input__flag" aria-hidden="true">
+                <svg viewBox="0 0 24 16" width="22" height="14"><rect width="24" height="16" fill="#B22234"/><g fill="#fff"><rect y="1.23" width="24" height="1.23"/><rect y="3.69" width="24" height="1.23"/><rect y="6.15" width="24" height="1.23"/><rect y="8.62" width="24" height="1.23"/><rect y="11.08" width="24" height="1.23"/><rect y="13.54" width="24" height="1.23"/></g><rect width="10" height="8.62" fill="#3C3B6E"/></svg>
+                <i class="fa-solid fa-caret-down"></i>
+              </span>
+              <input type="tel" name="phone" required>
+            </div>
+          </label>
+          <label class="estimate-field"><span>Email <em>*</em></span><input type="email" name="email" required></label>
+
+          <label class="estimate-field">
+            <span>Service Needed <em>*</em></span>
+            <select name="service" required>
+              <option value="">Select One</option>
+              <option>Weekly Pool Service</option>
+              <option>Commercial Pool Service</option>
+              <option>Equipment Repair</option>
+              <option>Equipment Installation</option>
+              <option>Green To Clean</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label class="estimate-field"><span>Zip Code <em>*</em></span><input type="text" name="zip" inputmode="numeric" required></label>
+          <fieldset class="estimate-field estimate-field--radio">
+            <legend>Are You A New Customer? <em>*</em></legend>
+            <label class="radio"><input type="radio" name="new-customer" value="yes" checked> Yes</label>
+            <label class="radio"><input type="radio" name="new-customer" value="no"> No</label>
+          </fieldset>
+        </div>
+
+        <button type="submit" class="form-submit form-submit--wide">Submit</button>
+      </form>
+
+      <h4 class="estimate__phone-h4">
+        Or For Faster Response Call:<br/>
+        <a href="tel:3526784100">(352) 678-4100</a>
+      </h4>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       FOOTER (reused)
+       ===================================================================== -->
+  {{> footer}}
+
+  <!-- =====================================================================
+       FLOATING WIDGETS (reused)
+       ===================================================================== -->
+  <aside class="rating-widget" id="ratingWidget" aria-label="Google rating">
+    <span class="rating-widget__g"><i class="fa-brands fa-google"></i></span>
+    <div class="rating-widget__body">
+      <small>Google Rating</small>
+      <div class="rating-widget__line"><strong>4.3</strong> <span class="stars stars--sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></div>
+      <small>Based on 15 reviews</small>
+    </div>
+    <button class="rating-widget__close" id="ratingClose" aria-label="Dismiss">&times;</button>
+  </aside>
+
+  <aside class="recaptcha-badge" aria-label="reCAPTCHA">
+    <div class="recaptcha-badge__inner">
+      <i class="fa-solid fa-shield-halved"></i>
+      <div><strong>protected by</strong><br/><span>reCAPTCHA</span></div>
+    </div>
+    <div class="recaptcha-badge__links"><a href="#">Privacy</a> - <a href="#">Terms</a></div>
+  </aside>
+
+  <script src="/js/nav.js"></script>
+  <script src="/js/carousel.js"></script>
+  <script src="/js/forms.js"></script>
+  <script src="/js/faq.js"></script>
+</body>
+</html>

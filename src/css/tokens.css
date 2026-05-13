@@ -1,0 +1,78 @@
+:root {
+  /* ============ BRAND COLORS ============ */
+  --brand-blue:        #0077BC;
+  --brand-blue-dark:   #005f99;
+  --brand-blue-darker: #004d80;
+  --heading-dark:      #26272C;
+  --body-gray:         #676C75;
+  --top-bar-bg:        #BDE9FB;
+  --light-blue-band:   #E8F4FB;
+  --red-cta:           #E63946;
+
+  /* ============ ORANGE CTA GRADIENT ============ */
+  --orange-start: #FCA01A;
+  --orange-end:   #FF6602;
+  --orange-gradient: linear-gradient(135deg, var(--orange-start) 0%, var(--orange-end) 100%);
+
+  /* ============ NEUTRALS ============ */
+  --white: #FFFFFF;
+  --black: #000000;
+  --border-gray: #E5E7EB;
+  --form-field-bg: #F3F4F6;
+
+  /* ============ TYPOGRAPHY ============ */
+  --font-display: "Cabin", system-ui, -apple-system, sans-serif;
+  --font-body:    "Inter", system-ui, -apple-system, sans-serif;
+  --font-ui:      "Outfit", system-ui, -apple-system, sans-serif;
+  --font-script:  "Sacramento", cursive;
+
+  /* ============ SPACING SCALE ============ */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 80px;
+  --space-10: 96px;
+
+  /* ============ TYPE SCALE (computed from live site) ============ */
+  --fs-h1:        48px;
+  --fs-h2:        39px;
+  --fs-h3:        28px;
+  --fs-h4:        20px;
+  --fs-body:      16px;
+  --fs-small:     14px;
+  --fs-eyebrow:   13px;
+
+  --lh-h1: 57.6px;
+  --lh-h2: 46.8px;
+  --lh-h3: 33.6px;
+  --lh-body: 26px;
+
+  --ls-h1: -1px;
+  --ls-h2: -0.5px;
+
+  /* ============ LAYOUT ============ */
+  --container-max: 1170px;
+  --container-narrow: 960px;
+  --container-wide: 1440px;
+  --gutter: 24px;
+
+  /* ============ BUTTON / BORDER ============ */
+  --radius-pill: 999px;
+  --radius-card: 8px;
+  --radius-sm: 4px;
+  --shadow-card: 0 4px 24px rgba(0,0,0,0.08);
+  --shadow-form: 0 8px 32px rgba(0,0,0,0.12);
+
+  /* ============ BREAKPOINTS (reference only — used in media queries) ============ */
+  /* desktop:   ≥1200px (default)
+     laptop:    1024–1199
+     tablet:    768–1023
+     mobile-l:  480–767
+     mobile-s:  ≤479
+  */
+}
