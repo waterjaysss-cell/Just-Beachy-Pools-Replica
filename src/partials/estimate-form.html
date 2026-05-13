@@ -1,0 +1,51 @@
+<div class="center">
+  <h2 class="h2-blue">Get Your Free Estimate</h2>
+  <p class="estimate__sub">Complete the form below and we will contact you to discuss your pool problem!</p>
+
+  <form class="estimate-form" onsubmit="event.preventDefault(); alert('Form is a demo placeholder.');">
+    <div class="estimate-form__trust">
+      <img src="{{rootPrefix}}assets/sections/trust-badges.webp" alt="Google Yelp Facebook reviews" />
+    </div>
+
+    <div class="estimate-form__fields">
+      <label class="estimate-field"><span>Name <em>*</em></span><input type="text" name="name" required></label>
+      <label class="estimate-field">
+        <span>Phone <em>*</em></span>
+        <div class="phone-input phone-input--light">
+          <span class="phone-input__flag" aria-hidden="true">
+            <svg viewBox="0 0 24 16" width="22" height="14"><rect width="24" height="16" fill="#B22234"/><g fill="#fff"><rect y="1.23" width="24" height="1.23"/><rect y="3.69" width="24" height="1.23"/><rect y="6.15" width="24" height="1.23"/><rect y="8.62" width="24" height="1.23"/><rect y="11.08" width="24" height="1.23"/><rect y="13.54" width="24" height="1.23"/></g><rect width="10" height="8.62" fill="#3C3B6E"/></svg>
+            <i class="fa-solid fa-caret-down"></i>
+          </span>
+          <input type="tel" name="phone" required>
+        </div>
+      </label>
+      <label class="estimate-field"><span>Email <em>*</em></span><input type="email" name="email" required></label>
+
+      <label class="estimate-field">
+        <span>Service Needed <em>*</em></span>
+        <select name="service" required>
+          <option value="">Select One</option>
+          <option>Weekly Pool Service</option>
+          <option>Commercial Pool Service</option>
+          <option>Equipment Repair</option>
+          <option>Equipment Installation</option>
+          <option>Green To Clean</option>
+          <option>Other</option>
+        </select>
+      </label>
+      <label class="estimate-field"><span>Zip Code <em>*</em></span><input type="text" name="zip" inputmode="numeric" required></label>
+      <fieldset class="estimate-field estimate-field--radio">
+        <legend>Are You A New Customer? <em>*</em></legend>
+        <label class="radio"><input type="radio" name="new-customer" value="yes" checked> Yes</label>
+        <label class="radio"><input type="radio" name="new-customer" value="no"> No</label>
+      </fieldset>
+    </div>
+
+    <button type="submit" class="form-submit form-submit--wide">Submit</button>
+  </form>
+
+  <h4 class="estimate__phone-h4">
+    Or For Faster Response Call:<br/>
+    <a href="tel:3526784100">(352) 678-4100</a>
+  </h4>
+</div>

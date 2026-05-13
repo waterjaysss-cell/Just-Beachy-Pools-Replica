@@ -1,0 +1,311 @@
+{
+  "_TODO": "Body text below is scaffolded placeholder. Replace each service's title/meta_description/h1/h2/lead/body_paragraph_1/body_paragraph_2/subsections with real content pulled from the corresponding live URL at justbeachypools.com.",
+  "services": [
+    {
+      "slug": "algae-removal",
+      "hub_slug": "pool-services",
+      "title": "Algae Removal - Just Beachy Pools | Spring Hill, FL",
+      "meta_description": "Professional pool algae removal in Spring Hill, FL. Just Beachy Pools restores your green or cloudy pool to crystal-clear blue with our proven treatment process.",
+      "h1": "Pool Algae Removal",
+      "subtitle_service_name": "Algae Removal",
+      "h2": "Restore Your Pool to Crystal-Clear Blue",
+      "lead": "Algae blooms can take over a pool in a matter of days — we treat the root cause, not just the symptom.",
+      "body_paragraph_1": "Placeholder body paragraph 1 — TODO: replace with real content from the live algae-removal page. Just Beachy Pools handles green, yellow/mustard, and black algae using the appropriate combination of brushing, vacuuming, shock dosing, and algaecide. The team will get the chemistry back into balance and keep it there.",
+      "body_paragraph_2": "Placeholder body paragraph 2 — TODO: replace with real content. Recurring algae usually means a filtration or circulation problem; our technicians inspect the pump, filter, and skimmer flow as part of every algae-removal service so the bloom does not return next month.",
+      "feature_image": "assets/sections/service-green.jpg",
+      "feature_image_alt": "Pool being treated for algae",
+      "subsections": [
+        { "h3": "Our Algae Treatment Process", "body": "Placeholder subsection body — TODO: replace with real content describing the multi-day treatment process from initial assessment to final test." },
+        { "h3": "Preventing Future Algae Blooms", "body": "Placeholder subsection body — TODO: prevention guidance: filtration runtime, sanitizer levels, brushing frequency, weekly service plans." }
+      ]
+    },
+    {
+      "slug": "green-to-clean",
+      "hub_slug": "pool-services",
+      "title": "Green to Clean Pool Service - Just Beachy Pools",
+      "meta_description": "Turn your green pool crystal clear with Just Beachy Pools' Green to Clean service in Spring Hill, FL. Fast turnaround, transparent pricing.",
+      "h1": "Green to Clean Pool Service",
+      "subtitle_service_name": "Green to Clean Service",
+      "h2": "From Swamp to Sparkling — Fast",
+      "lead": "When your pool has gone fully green, our Green to Clean program is the fastest way back to swim-ready water.",
+      "body_paragraph_1": "Placeholder body paragraph 1 — TODO: replace with real content describing the standard Green to Clean program: shock, clarifier, filter run-time, vacuum-to-waste, and re-balance.",
+      "body_paragraph_2": "Placeholder body paragraph 2 — TODO: pricing transparency, expected turnaround (typically 3–7 days), and what's included vs. what's billed separately.",
+      "feature_image": "assets/sections/service-green.jpg",
+      "feature_image_alt": "Green-to-clean pool transformation",
+      "subsections": [
+        { "h3": "What's Included", "body": "Placeholder — TODO: itemize chemicals, equipment, technician visits, and follow-up balance check." },
+        { "h3": "Typical Turnaround", "body": "Placeholder — TODO: describe day-by-day timeline depending on starting severity." }
+      ]
+    },
+    {
+      "slug": "salt-system-service",
+      "hub_slug": "pool-services",
+      "title": "Salt System Service - Just Beachy Pools",
+      "meta_description": "Salt-chlorinator pool service and salt cell cleaning in Spring Hill, FL. Just Beachy Pools keeps your salt system running at peak efficiency.",
+      "h1": "Salt System Service",
+      "subtitle_service_name": "Salt System Service",
+      "h2": "Salt-Chlorinated Pools, Maintained Properly",
+      "lead": "Salt pools still need attention — we keep the salt cell, controller, and chemistry dialed in.",
+      "body_paragraph_1": "Placeholder body paragraph 1 — TODO: replace with real content about salt cell inspection, calcium-buildup cleaning, controller diagnostics, and salt-level testing.",
+      "body_paragraph_2": "Placeholder body paragraph 2 — TODO: stabilizer and pH management specific to salt systems; signs of a failing cell.",
+      "feature_image": "assets/sections/service-chemicals.jpg",
+      "feature_image_alt": "Salt chlorinator cell",
+      "subsections": [
+        { "h3": "Salt Cell Cleaning", "body": "Placeholder — TODO: acid-bath process, frequency recommendations, longevity expectations." }
+      ]
+    },
+    {
+      "slug": "chemicals-only",
+      "hub_slug": "pool-services",
+      "title": "Chemicals Only Pool Service - Just Beachy Pools",
+      "meta_description": "Already brush and net your pool yourself? Just Beachy Pools' Chemicals Only service keeps your water balanced without the full-service overhead.",
+      "h1": "Chemicals Only Pool Service",
+      "subtitle_service_name": "Chemicals Only Service",
+      "h2": "Balanced Water, Without the Full-Service Cost",
+      "lead": "For owners who handle the cleaning themselves — we'll handle the chemistry.",
+      "body_paragraph_1": "Placeholder body paragraph 1 — TODO: describe weekly testing of chlorine, pH, alkalinity, calcium hardness, and stabilizer; technicians dose and document each visit.",
+      "body_paragraph_2": "Placeholder body paragraph 2 — TODO: who this is right for, who it isn't, and how it pairs with seasonal one-time deep cleans.",
+      "feature_image": "assets/sections/service-chemicals.jpg",
+      "feature_image_alt": "Pool chemical testing",
+      "subsections": [
+        { "h3": "What We Test Each Visit", "body": "Placeholder — TODO: list of test parameters and target ranges." }
+      ]
+    },
+    {
+      "slug": "pool-drain-startup",
+      "hub_slug": "pool-services",
+      "title": "Pool Drain & Start-Ups - Just Beachy Pools",
+      "meta_description": "Pool drain and start-up service in Spring Hill, FL. Just Beachy Pools safely drains, cleans, and refills your pool with proper chemistry.",
+      "h1": "Pool Drain & Start-Ups",
+      "subtitle_service_name": "Pool Drain & Start-Ups",
+      "h2": "Full Pool Drains, Done Safely",
+      "lead": "Draining a pool the wrong way can pop the shell out of the ground — we do it correctly, every time.",
+      "body_paragraph_1": "Placeholder body paragraph 1 — TODO: describe groundwater considerations, hydrostatic-relief valves, draining technique, surface inspection, acid wash if requested.",
+      "body_paragraph_2": "Placeholder body paragraph 2 — TODO: refill procedure, chemistry start-up over the first 30 days, and warranty notes.",
+      "feature_image": "assets/sections/service-drain.jpg",
+      "feature_image_alt": "Pool being drained for service",
+      "subsections": [
+        { "h3": "When You Need a Full Drain", "body": "Placeholder — TODO: high TDS, calcium scaling, stains, plaster repair." }
+      ]
+    },
+    {
+      "slug": "weekly-pool-service",
+      "hub_slug": "pool-cleaning",
+      "title": "Weekly Pool Service - Just Beachy Pools",
+      "meta_description": "Weekly pool cleaning service in Spring Hill, FL. Just Beachy Pools keeps your pool swim-ready year-round.",
+      "h1": "Weekly Pool Service",
+      "subtitle_service_name": "Weekly Pool Service",
+      "h2": "Worry-Free, Year-Round Pool Care",
+      "lead": "Our most popular plan — full weekly service so you can enjoy your pool, not work on it.",
+      "body_paragraph_1": "Placeholder body paragraph 1 — TODO: describe the weekly checklist: skim, brush, vacuum, empty baskets, backwash, test and dose chemistry, equipment check.",
+      "body_paragraph_2": "Placeholder body paragraph 2 — TODO: route reliability, technician consistency, billing model.",
+      "feature_image": "assets/sections/service-weekly.jpg",
+      "feature_image_alt": "Technician performing weekly pool service",
+      "subsections": [
+        { "h3": "Our Weekly Checklist", "body": "Placeholder — TODO: full checklist enumerated." },
+        { "h3": "What's Included in Pricing", "body": "Placeholder — TODO: standard chemicals included, filter cleans, etc." }
+      ]
+    },
+    {
+      "slug": "one-time-cleaning",
+      "hub_slug": "pool-cleaning",
+      "title": "One-Time Pool Cleaning - Just Beachy Pools",
+      "meta_description": "Need a one-time pool cleaning for a party, sale, or seasonal opening? Just Beachy Pools delivers a deep clean on demand in Spring Hill, FL.",
+      "h1": "One-Time Pool Cleaning",
+      "subtitle_service_name": "One-Time Pool Cleaning",
+      "h2": "A Deep Clean, On Your Schedule",
+      "lead": "Hosting? Selling? Opening for the season? Get a single full-service visit without committing to a weekly plan.",
+      "body_paragraph_1": "Placeholder body paragraph 1 — TODO: scope of a one-time visit vs weekly; what's possible in a single appointment.",
+      "body_paragraph_2": "Placeholder body paragraph 2 — TODO: typical pricing, scheduling lead time, and add-ons.",
+      "feature_image": "assets/sections/service-weekly.jpg",
+      "feature_image_alt": "Pool deep cleaning",
+      "subsections": [
+        { "h3": "When to Book", "body": "Placeholder — TODO: lead-time recommendations." }
+      ]
+    },
+    {
+      "slug": "vacuum-service",
+      "hub_slug": "pool-cleaning",
+      "title": "Pool Vacuum Service - Just Beachy Pools",
+      "meta_description": "Pool vacuuming service in Spring Hill, FL. Manual and robotic vacuuming to remove debris from your pool floor and walls.",
+      "h1": "Pool Vacuum Service",
+      "subtitle_service_name": "Pool Vacuum Service",
+      "h2": "Debris-Free Pool Floors",
+      "lead": "Sand, leaves, and dust on the bottom of the pool? We have you covered.",
+      "body_paragraph_1": "Placeholder body paragraph 1 — TODO: manual vacuuming vs robotic options, vacuum-to-waste vs through-filter, how often it's needed.",
+      "body_paragraph_2": "Placeholder body paragraph 2 — TODO: bundling with weekly service vs as a standalone visit.",
+      "feature_image": "assets/sections/service-weekly.jpg",
+      "feature_image_alt": "Pool vacuuming",
+      "subsections": []
+    },
+    {
+      "slug": "brush-and-skim",
+      "hub_slug": "pool-cleaning",
+      "title": "Brush & Skim Service - Just Beachy Pools",
+      "meta_description": "Pool brushing and skimming service in Spring Hill, FL. Keep walls free of buildup and surface free of debris.",
+      "h1": "Brush & Skim Service",
+      "subtitle_service_name": "Brush & Skim Service",
+      "h2": "The Basics, Done Right",
+      "lead": "Wall brushing and surface skimming are the simplest preventive habits in pool care — and the most-skipped.",
+      "body_paragraph_1": "Placeholder body paragraph 1 — TODO: why brushing matters (algae prevention, scale prevention), wall material considerations.",
+      "body_paragraph_2": "Placeholder body paragraph 2 — TODO: skimmer-basket emptying, surface-skim technique, frequency.",
+      "feature_image": "assets/sections/service-weekly.jpg",
+      "feature_image_alt": "Pool skimming",
+      "subsections": []
+    },
+    {
+      "slug": "pool-pump-repair",
+      "hub_slug": "pool-repairs",
+      "title": "Pool Pump Repair - Just Beachy Pools",
+      "meta_description": "Pool pump repair in Spring Hill, FL. Just Beachy Pools diagnoses and repairs single-speed and variable-speed pool pumps.",
+      "h1": "Pool Pump Repair",
+      "subtitle_service_name": "Pool Pump Repair",
+      "h2": "When Your Pump Hums, Drips, or Quits",
+      "lead": "Pump problems are the #1 cause of cloudy, green pools — get it diagnosed before chemistry gets out of control.",
+      "body_paragraph_1": "Placeholder body paragraph 1 — TODO: common pump failure modes (seal leak, capacitor, impeller, bearings), diagnosis process.",
+      "body_paragraph_2": "Placeholder body paragraph 2 — TODO: repair vs replace decision points, variable-speed upgrade option.",
+      "feature_image": "assets/sections/service-repairs.jpg",
+      "feature_image_alt": "Pool pump being repaired",
+      "subsections": [
+        { "h3": "Common Pump Problems We Fix", "body": "Placeholder — TODO: list of symptoms and likely causes." }
+      ]
+    },
+    {
+      "slug": "pool-heater-repair",
+      "hub_slug": "pool-repairs",
+      "title": "Pool Heater Repair - Just Beachy Pools",
+      "meta_description": "Pool heater repair in Spring Hill, FL. Just Beachy Pools repairs gas, electric, and heat-pump pool heaters.",
+      "h1": "Pool Heater Repair",
+      "subtitle_service_name": "Pool Heater Repair",
+      "h2": "Get Your Pool Warm Again",
+      "lead": "Heaters fail at the worst times — we diagnose gas, electric, and heat-pump systems.",
+      "body_paragraph_1": "Placeholder body paragraph 1 — TODO: common heater issues by type (ignition, flow sensor, heat exchanger, refrigerant on heat pumps).",
+      "body_paragraph_2": "Placeholder body paragraph 2 — TODO: certified for the major brands (Pentair, Hayward, Jandy, Raypak).",
+      "feature_image": "assets/sections/service-repairs.jpg",
+      "feature_image_alt": "Pool heater diagnostic",
+      "subsections": []
+    },
+    {
+      "slug": "pool-filter-repair",
+      "hub_slug": "pool-repairs",
+      "title": "Pool Filter Repair - Just Beachy Pools",
+      "meta_description": "Pool filter repair in Spring Hill, FL. Sand, cartridge, and DE filter service and repair by Just Beachy Pools.",
+      "h1": "Pool Filter Repair",
+      "subtitle_service_name": "Pool Filter Repair",
+      "h2": "Sand, Cartridge, or DE — We Repair All Three",
+      "lead": "If your water is cloudy despite balanced chemistry, your filter is usually the culprit.",
+      "body_paragraph_1": "Placeholder body paragraph 1 — TODO: differences between sand/cartridge/DE, replacement intervals, signs of failure.",
+      "body_paragraph_2": "Placeholder body paragraph 2 — TODO: backwashing, media change-out, multi-port valve repair.",
+      "feature_image": "assets/sections/service-repairs.jpg",
+      "feature_image_alt": "Pool filter being serviced",
+      "subsections": []
+    },
+    {
+      "slug": "pool-light-repair",
+      "hub_slug": "pool-repairs",
+      "title": "Pool Light Repair - Just Beachy Pools",
+      "meta_description": "Pool light repair in Spring Hill, FL. Just Beachy Pools replaces bulbs, gaskets, niches, and upgrades to LED.",
+      "h1": "Pool Light Repair",
+      "subtitle_service_name": "Pool Light Repair",
+      "h2": "Light Out? We Can Help",
+      "lead": "From bulb swaps to full LED retrofits — pool lighting done safely.",
+      "body_paragraph_1": "Placeholder body paragraph 1 — TODO: bulb vs niche vs transformer, water-tightness, GFCI testing.",
+      "body_paragraph_2": "Placeholder body paragraph 2 — TODO: LED upgrade benefits (color-changing, lower wattage, longer life).",
+      "feature_image": "assets/sections/service-repairs.jpg",
+      "feature_image_alt": "Pool light repair",
+      "subsections": []
+    },
+    {
+      "slug": "leak-detection",
+      "hub_slug": "pool-repairs",
+      "title": "Pool Leak Detection - Just Beachy Pools",
+      "meta_description": "Pool leak detection in Spring Hill, FL. Just Beachy Pools locates plumbing, structural, and equipment leaks fast.",
+      "h1": "Pool Leak Detection",
+      "subtitle_service_name": "Leak Detection",
+      "h2": "Losing Water? Let's Find Out Where",
+      "lead": "A pool that loses more than 1/4\" per day usually has a leak — we find it without tearing up the deck.",
+      "body_paragraph_1": "Placeholder body paragraph 1 — TODO: dye testing, pressure testing of plumbing, listening equipment.",
+      "body_paragraph_2": "Placeholder body paragraph 2 — TODO: typical leak locations (skimmer throat, return jets, light niche, main drain).",
+      "feature_image": "assets/sections/service-repairs.jpg",
+      "feature_image_alt": "Pool leak detection in progress",
+      "subsections": []
+    },
+    {
+      "slug": "pool-pump-installation",
+      "hub_slug": "pool-equipment-installations",
+      "title": "Pool Pump Installation - Just Beachy Pools",
+      "meta_description": "New pool pump installation in Spring Hill, FL. Variable-speed and single-speed pump installs by Just Beachy Pools.",
+      "h1": "Pool Pump Installation",
+      "subtitle_service_name": "Pool Pump Installation",
+      "h2": "Upgrade to a Quieter, More Efficient Pump",
+      "lead": "Variable-speed pumps pay for themselves in 1–2 years — we'll size, install, and program one for your pool.",
+      "body_paragraph_1": "Placeholder body paragraph 1 — TODO: sizing methodology (turnover rate, head loss), brand options (Hayward Tristar VS, Pentair IntelliFlo3, Jandy ePump).",
+      "body_paragraph_2": "Placeholder body paragraph 2 — TODO: install scope: removal, plumbing, electrical, programming, warranty registration.",
+      "feature_image": "assets/sections/service-installations.jpg",
+      "feature_image_alt": "New pool pump installation",
+      "subsections": [
+        { "h3": "Why Variable-Speed", "body": "Placeholder — TODO: energy savings, noise reduction, Florida rebate eligibility." }
+      ]
+    },
+    {
+      "slug": "pool-heater-installation",
+      "hub_slug": "pool-equipment-installations",
+      "title": "Pool Heater Installation - Just Beachy Pools",
+      "meta_description": "Pool heater installation in Spring Hill, FL. Gas, electric, and heat-pump heater installs by Just Beachy Pools.",
+      "h1": "Pool Heater Installation",
+      "subtitle_service_name": "Pool Heater Installation",
+      "h2": "Extend Your Swim Season",
+      "lead": "Heat pumps for Florida pools, gas heaters for cold-snap recovery — we install both.",
+      "body_paragraph_1": "Placeholder body paragraph 1 — TODO: heat-pump vs gas comparison for Florida climate; BTU sizing.",
+      "body_paragraph_2": "Placeholder body paragraph 2 — TODO: install scope, gas line / electrical considerations, permitting.",
+      "feature_image": "assets/sections/service-installations.jpg",
+      "feature_image_alt": "Pool heater installation",
+      "subsections": []
+    },
+    {
+      "slug": "pool-filter-installation",
+      "hub_slug": "pool-equipment-installations",
+      "title": "Pool Filter Installation - Just Beachy Pools",
+      "meta_description": "Pool filter installation in Spring Hill, FL. Sand, cartridge, and DE filter installs by Just Beachy Pools.",
+      "h1": "Pool Filter Installation",
+      "subtitle_service_name": "Pool Filter Installation",
+      "h2": "The Right Filter for Your Pool",
+      "lead": "Filter type and size make or break water clarity — let us spec and install the right one.",
+      "body_paragraph_1": "Placeholder body paragraph 1 — TODO: how to size by gallons / flow; pros and cons of each filter type.",
+      "body_paragraph_2": "Placeholder body paragraph 2 — TODO: install process, media or cartridge included, post-install start-up.",
+      "feature_image": "assets/sections/service-installations.jpg",
+      "feature_image_alt": "New pool filter installation",
+      "subsections": []
+    },
+    {
+      "slug": "salt-chlorinator-installation",
+      "hub_slug": "pool-equipment-installations",
+      "title": "Salt Chlorinator Installation - Just Beachy Pools",
+      "meta_description": "Salt chlorinator installation in Spring Hill, FL. Convert your chlorine pool to a salt system with Just Beachy Pools.",
+      "h1": "Salt Chlorinator Installation",
+      "subtitle_service_name": "Salt Chlorinator Installation",
+      "h2": "Convert to a Salt Pool",
+      "lead": "Softer water, less chemical handling, and lower long-run cost — a salt conversion pays off.",
+      "body_paragraph_1": "Placeholder body paragraph 1 — TODO: how salt chlorination works, sizing the cell for your pool, salt level start-up.",
+      "body_paragraph_2": "Placeholder body paragraph 2 — TODO: brand options (Hayward AquaRite, Pentair IntelliChlor, Jandy AquaPure).",
+      "feature_image": "assets/sections/service-installations.jpg",
+      "feature_image_alt": "Salt chlorinator installation",
+      "subsections": []
+    },
+    {
+      "slug": "pool-light-installation",
+      "hub_slug": "pool-equipment-installations",
+      "title": "Pool Light Installation - Just Beachy Pools",
+      "meta_description": "Pool light installation in Spring Hill, FL. LED and color-changing pool lights installed by Just Beachy Pools.",
+      "h1": "Pool Light Installation",
+      "subtitle_service_name": "Pool Light Installation",
+      "h2": "Light Up Your Pool",
+      "lead": "Modern LED pool lights — long-life, low-wattage, color-changing.",
+      "body_paragraph_1": "Placeholder body paragraph 1 — TODO: niche-mounted vs surface-mount, transformer requirements, GFCI.",
+      "body_paragraph_2": "Placeholder body paragraph 2 — TODO: brand options (Pentair IntelliBrite, Hayward ColorLogic, Jandy WaterColors).",
+      "feature_image": "assets/sections/service-installations.jpg",
+      "feature_image_alt": "Pool LED light installation",
+      "subsections": []
+    }
+  ]
+}
