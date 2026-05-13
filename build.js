@@ -99,6 +99,25 @@ function inlinePartials(html, partials) {
   throw new Error('Partial inclusion depth limit hit (cycle?).');
 }
 
+function expandEach(html, context) {
+  // {{#each path}}…{{/each}} — repeat the inner block once per array element,
+  // resolving {{field}} references inside the block against the loop item.
+  // Outer-context references (e.g. {{site.name}}) are left for the next pass.
+  return html.replace(
+    /\{\{#each\s+([\w.]+)\s*\}\}([\s\S]*?)\{\{\/each\}\}/g,
+    (_, pathStr, block) => {
+      const arr = lookup(context, pathStr);
+      if (!Array.isArray(arr)) return '';
+      return arr.map((item) =>
+        block.replace(/\{\{\s*([\w.]+)\s*\}\}/g, (m, key) => {
+          const v = lookup(item, key);
+          return v == null ? m : String(v);
+        })
+      ).join('');
+    }
+  );
+}
+
 function substitute(html, context) {
   // Replace {{key.path}} with looked-up value. Anything starting with `>` was
   // already handled in inlinePartials.
@@ -139,6 +158,7 @@ function assertNoUnresolved(html, where) {
 
 function render(template, partials, context, where) {
   let html = inlinePartials(template, partials);
+  html = expandEach(html, context);
   html = substitute(html, context);
   html = rewriteLinks(html);
   assertNoUnresolved(html, where);
